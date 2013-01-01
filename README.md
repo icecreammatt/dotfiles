@@ -12,6 +12,7 @@ dotfiles
 * Chromium
 * Chrome Canary
 * Sublime Text
+* Xcode
 * Notational Velocity
 * P4Merge
 * SourceTree
