@@ -20,3 +20,7 @@ dotfiles
 * Dropbox
 * 1Password
 * Skype
+* smcFanControl
+* Spectacle
+* gfxCardStatus
+* MarkdownLive
