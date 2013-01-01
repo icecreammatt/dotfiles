@@ -7,7 +7,7 @@ dotfiles
 2. Run makesymlinks.sh
 
 
-# Program install list
+# Programs to install
 
 * Chromium
 * Chrome Canary
