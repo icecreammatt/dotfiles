@@ -4,9 +4,20 @@ PS1='$(networksetup -getcomputername):\W \u\$ '
 alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
 alias sub='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 alias ll='ls -lh'
-
-alias mysql=/usr/local/mysql/bin/mysql
+alias mysql=/usr/local/mysql/bin/mysql 
 alias mysqladmin=/usr/local/mysql/bin/mysqladmin
+
+alias c=clear
+alias o='open . &'
+alias ,='cd ..'
+
+# Git
+alias g='git status'
+alias gs='git status'
+alias gd='git diff'
+alias ga='git add'
+alias gc='git commit -m'
+alias gca='git commit -v -a'
 
 # Tell ls to be colorful
 export CLICOLOR=1
