@@ -18,6 +18,8 @@ alias gd='git diff'
 alias ga='git add'
 alias gc='git commit -m'
 alias gca='git commit -v -a'
+alias gprom='git pull --rebase origin master'
+alias gpom='git push origin master'
 
 # Tell ls to be colorful
 export CLICOLOR=1
