@@ -1,4 +1,5 @@
 PS1='$(networksetup -getcomputername):\W \u\$ '
+PS1="\W \$ "
 
 # Alias List
 alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
