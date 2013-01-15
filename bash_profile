@@ -14,7 +14,8 @@ alias ,='cd ..'
 
 # Git
 alias g='git status'
-alias gs='git status'
+alias gs='git show'
+alias gl='git log'
 alias gd='git diff'
 alias ga='git add'
 alias gc='git commit -m'
