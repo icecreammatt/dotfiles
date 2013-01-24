@@ -5,6 +5,7 @@ PS1="\W \$ "
 alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
 alias sub='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 alias ll='ls -lh'
+alias l='ls -lh'
 alias mysql=/usr/local/mysql/bin/mysql 
 alias mysqladmin=/usr/local/mysql/bin/mysqladmin
 
@@ -22,6 +23,7 @@ alias gc='git commit -m'
 alias gca='git commit -v -a'
 alias gprom='git pull --rebase origin master'
 alias gpom='git push origin master'
+alias grh='git reset --hard'
 
 # Tell ls to be colorful
 export CLICOLOR=1
