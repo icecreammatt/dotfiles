@@ -40,6 +40,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 
 alias c=clear
+alias cl='clear; ls -lA1'
 alias o='open . &'
 alias ,='cd ..'
 
