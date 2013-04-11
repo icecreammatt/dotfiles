@@ -32,17 +32,21 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git st stt)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+export PATH=/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin
 
 alias c=clear
 alias cl='clear; ls -lA1'
 alias o='open . &'
 alias ,='cd ..'
+
+# Sublime
+alias st='subl'
+alias stt='subl .'
 
 # Git
 alias g='git status'
