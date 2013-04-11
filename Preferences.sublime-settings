@@ -1,17 +1,22 @@
 {
 	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
 	"draw_white_space": "selection",
-	"font_size": 11.0,
+	"font_size": 13.0,
 	"gutter": true,
 	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
 	"lineNumbers": true,
 	"overlay_scroll_bars": "enabled",
 	"scroll_past_end": true,
 	"soda_classic_tabs": true,
-	"theme": "Soda Dark.sublime-theme",
 	"tab_size": 4,
+	"theme": "Soda Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"use_simple_full_screen": true,
-	"use_tab_stops": true
+	"use_tab_stops": true,
+    "ignored_packages": []
 }
