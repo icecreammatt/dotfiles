@@ -63,3 +63,7 @@ alias gpom='git push origin master'
 alias gp='git pull'
 alias grh='git reset --hard'
 alias gclean='git branch --merged | xargs git branch -d; git remote prune origin'
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Applications/adt-bundle-mac-x86_64/sdk/tools:/Applications/adt-bundle-mac-x86_64/sdk/platform-tools:$PATH"
