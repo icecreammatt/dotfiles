@@ -43,6 +43,7 @@ alias c=clear
 alias cl='clear; ls -lA1'
 alias o='open . &'
 alias ,='cd ..'
+alias rs='rake setup'
 
 # Sublime
 alias st='subl'
