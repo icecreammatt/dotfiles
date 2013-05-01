@@ -6,7 +6,6 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Vintage"
 	],
 	"lineNumbers": true,
 	"overlay_scroll_bars": "enabled",
@@ -17,6 +16,5 @@
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"use_simple_full_screen": true,
-	"use_tab_stops": true,
-    "ignored_packages": []
+	"use_tab_stops": true
 }
