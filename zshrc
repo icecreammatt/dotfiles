@@ -41,6 +41,7 @@ export PATH=/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/lo
 
 alias c=clear
 alias cl='clear; ls -lA1'
+alias l='ls -l'
 alias o='open . &'
 alias ,='cd ..'
 alias rs='rake setup'
