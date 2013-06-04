@@ -64,7 +64,9 @@ alias gprom='git pull --rebase origin master'
 alias gpom='git push origin master'
 alias gp='git pull'
 alias grh='git reset --hard'
-alias gclean='git branch --merged | xargs git branch -d; git remote prune origin'
+#alias gclean='git branch --merged | xargs git branch -d; git remote prune origin'
+alias gclean='git remote prune origin; git branch --merged | grep -v -E "(\*|master)" | xargs -n 1 git branch -d'
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
