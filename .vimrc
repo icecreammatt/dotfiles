@@ -1,0 +1,2 @@
+set ignorecase
+syntax on
