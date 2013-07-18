@@ -30,5 +30,8 @@ for file in $files; do
     ln -s $dir/$file ~/.$file
 done
 
+# link zsh plugins
+ln -s $dir/directories/zsh ~/.zsh
+
 cp ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Preferences.sublime-settings.backup
 ln -s $dir/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Preferences.sublime-settings
