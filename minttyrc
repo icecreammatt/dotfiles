@@ -1,0 +1,6 @@
+BoldAsFont=no
+Transparency=low
+CursorType=block
+FontHeight=18
+Term=xterm-256color
+Scrollbar=none
