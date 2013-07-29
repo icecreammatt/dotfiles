@@ -40,9 +40,9 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin
 
 alias c=clear
-alias cl='clear; ls -lA1'
-alias ll='ls -la'
-alias l='ls -l'
+alias cl='clear; ls -lA1h'
+alias ll='ls -lah'
+alias l='ls -lh'
 alias o='open . &'
 alias ,='cd ..'
 alias rs='rake setup'
