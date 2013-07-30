@@ -5,3 +5,4 @@ FontHeight=12
 Term=xterm-256color
 Scrollbar=none
 FontIsBold=no
+CtrlShiftShortcuts=yes
