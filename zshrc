@@ -72,3 +72,12 @@ alias gclean='git remote prune origin; git branch --merged | grep -v -E "(\*|mas
 export PATH="/usr/local/heroku/bin:$PATH"
 
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Applications/adt-bundle-mac-x86_64/sdk/tools:/Applications/adt-bundle-mac-x86_64/sdk/platform-tools:$PATH"
+
+source ~/.zsh/zshrc.sh
+precmd() {
+    update_current_git_vars
+}
+
+RPROMPT=$'$(git_super_status)'
+PROMPT=$'%{$fg_bold[red]%}➜ %{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}%{$fg_bold[blue]%} % %{$reset_color%}'
+
