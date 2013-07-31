@@ -36,8 +36,17 @@ plugins=(git st stt)
 
 source $ZSH/oh-my-zsh.sh
 
+herokuPath="/usr/local/heroku/bin"
+androidPath="/Applications/adt-bundle-mac-x86_64/sdk/tools:/Applications/adt-bundle-mac-x86_64/sdk/platform-tools"
+generalPath="/usr/bin:/bin:/usr/sbin:/sbin"
+
 # Customize to your needs...
-export PATH=/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/share/npm/bin:$herokuPath:$androidPath:$generalPath
+
+#export PATH=/usr/local/bin:/usr/local/share/npm/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin
+#export PATH="/usr/local/heroku/bin:$PATH"
+#export PATH="/Applications/adt-bundle-mac-x86_64/sdk/tools:/Applications/adt-bundle-mac-x86_64/sdk/platform-tools:$PATH"
+#export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
 alias c=clear
 alias cl='clear; ls -lA1h'
@@ -65,13 +74,7 @@ alias gprom='git pull --rebase origin master'
 alias gpom='git push origin master'
 alias gp='git pull'
 alias grh='git reset --hard'
-#alias gclean='git branch --merged | xargs git branch -d; git remote prune origin'
 alias gclean='git remote prune origin; git branch --merged | grep -v -E "(\*|master)" | xargs -n 1 git branch -d'
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Applications/adt-bundle-mac-x86_64/sdk/tools:/Applications/adt-bundle-mac-x86_64/sdk/platform-tools:$PATH"
 
 source ~/.zsh/zshrc.sh
 precmd() {
