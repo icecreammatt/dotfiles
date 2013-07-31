@@ -59,6 +59,7 @@ alias rs='rake setup'
 # Sublime
 alias st='subl'
 alias stt='subl .'
+alias subl='subl'
 
 # Git
 alias g='git status'
