@@ -39,9 +39,10 @@ source $ZSH/oh-my-zsh.sh
 herokuPath="/usr/local/heroku/bin"
 androidPath="/Applications/adt-bundle-mac-x86_64/sdk/tools:/Applications/adt-bundle-mac-x86_64/sdk/platform-tools"
 generalPath="/usr/bin:/bin:/usr/sbin:/sbin"
+windowsPath="/cygdrive/c/Windows/System32/"
 
 # Customize to your needs...
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/share/npm/bin:$herokuPath:$androidPath:$generalPath
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/share/npm/bin:$herokuPath:$androidPath:$generalPath:$windowsPath
 
 #export PATH=/usr/local/bin:/usr/local/share/npm/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin
 #export PATH="/usr/local/heroku/bin:$PATH"
