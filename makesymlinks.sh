@@ -33,6 +33,7 @@ done
 # link zsh plugins
 ln -s $dir/directories/zsh ~/.zsh
 ln -s $dir/directories/vim ~/.vim
+ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ~/bin/subl
 
 cp ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Preferences.sublime-settings.backup
 ln -s $dir/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Preferences.sublime-settings
