@@ -56,6 +56,7 @@ alias l='ls -lh'
 alias o='open . &'
 alias ,='cd ..'
 alias rs='rake setup'
+alias quickweb='python -m SimpleHTTPServer'
 
 # Sublime
 alias st='subl'
