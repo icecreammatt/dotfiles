@@ -1,5 +1,5 @@
 BoldAsFont=no
-Transparency=low
+Transparency=medium
 CursorType=block
 FontHeight=12
 Term=xterm-256color
