@@ -54,6 +54,7 @@ alias cl='clear; ls -lA1h'
 alias ll='ls -lah'
 alias l='ls -lh'
 alias o='open . &'
+alias e='explorer . &'
 alias ,='cd ..'
 alias rs='rake setup'
 alias quickweb='python -m SimpleHTTPServer'
@@ -78,6 +79,7 @@ alias gpom='git push origin master'
 alias gp='git pull'
 alias grh='git reset --hard'
 alias gclean='git remote prune origin; git branch --merged | grep -v -E "(\*|master)" | xargs -n 1 git branch -d'
+alias gsub='git submodule update --init --recursive'
 
 source ~/.zsh/zshrc.sh
 precmd() {
