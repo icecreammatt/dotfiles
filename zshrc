@@ -73,6 +73,7 @@ alias gitlog='git log --graph --full-history --all --color --pretty=format:"%x1b
 alias gb='git branch -a'
 alias gd='git diff'
 alias gdc='git diff --cached'
+alias gds='git diff --staged'
 alias gcm='git checkout master'
 alias ga='git add'
 alias gc='git commit -m'
