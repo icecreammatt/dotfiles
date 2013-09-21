@@ -86,6 +86,8 @@ alias gsp='git stash pop'
 alias grh='git reset --hard'
 alias gclean='git remote prune origin; git branch --merged | grep -v -E "(\*|master)" | xargs -n 1 git branch -d'
 alias gsub='git submodule update --init --recursive'
+alias gsl='git stash list'
+alias gsd='git stash show -p stash@{0}'
 
 source ~/.zsh/zshrc.sh
 precmd() {
