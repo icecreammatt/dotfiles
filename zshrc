@@ -39,7 +39,7 @@ source $ZSH/oh-my-zsh.sh
 herokuPath="/usr/local/heroku/bin"
 androidPath="/Applications/adt-bundle-mac-x86_64/sdk/tools:/Applications/adt-bundle-mac-x86_64/sdk/platform-tools"
 generalPath="/usr/bin:/bin:/usr/sbin:/sbin"
-windowsPath="/cygdrive/c/Windows/System32/"
+windowsPath="/cygdrive/c/Windows/System32:/cygdrive/c/Program\ Files/Perforce"
 node="$HOME/local/node/bin"
 
 # Customize to your needs...
