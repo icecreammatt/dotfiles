@@ -59,6 +59,8 @@ alias e='explorer . &'
 alias ,='cd ..'
 alias rs='rake setup'
 alias quickweb='python -m SimpleHTTPServer'
+alias pd='popd'
+alias md='mkdir'
 
 # Sublime
 alias st='subl'
