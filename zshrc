@@ -98,10 +98,10 @@ alias gsd='git stash show -p stash@{0}'
 alias gmt='git mergetool'
 
 source ~/.zsh/zshrc.sh
-precmd() {
-    update_current_git_vars
-}
+#precmd() {
+#    update_current_git_vars
+#}
 
-RPROMPT=$'$(git_super_status) $(git_time_since_commit)'
+RPROMPT=$'$(git_super_status)'
 PROMPT=$'%{$fg_bold[red]%}➜ %{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}%{$fg_bold[blue]%} % %{$reset_color%}'
 
