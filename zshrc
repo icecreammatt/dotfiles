@@ -61,6 +61,7 @@ alias rs='rake setup'
 alias quickweb='python -m SimpleHTTPServer'
 alias pd='popd'
 alias md='mkdir'
+alias tv='terminal_velocity ~/Dropbox/NotationalVelocity'
 
 # Sublime
 alias st='subl'
