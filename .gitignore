@@ -1,3 +1,5 @@
 *.*~
 .DS_STORE
 .netrwhist
+*.swp
+directories/vim/bundle/*
