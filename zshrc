@@ -68,6 +68,7 @@ alias tma='tmux -2 attach -d -t'
 alias tmux='tmux -2 new -s $(basename $(pwd))'
 alias tm=tmux
 alias tml='tmux list-sessions'
+alias hn='hn -c | less'
 
 # Sublime
 alias st='subl'
