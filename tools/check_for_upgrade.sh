@@ -18,7 +18,7 @@ function _upgrade_dotfiles() {
 epoch_target=$UPDATE_DOTFILES_DAYS
 if [[ -z "$epoch_target" ]]; then
   # Default to old behavior
-  epoch_target=13
+  epoch_target=1
 fi
 
 if [ -f ~/.dotfiles-update ]

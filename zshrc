@@ -44,12 +44,7 @@ generalPath="/usr/bin:/bin:/usr/sbin:/sbin"
 windowsPath="/c/Windows/System32:/c/Program Files/Perforce"
 node="$HOME/local/node/bin"
 
-# Customize to your needs...
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/share/npm/bin:$herokuPath:$androidPath:$generalPath:$windowsPath:$node
-
-#export PATH=/usr/local/bin:/usr/local/share/npm/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin
-#export PATH="/usr/local/heroku/bin:$PATH"
-#export PATH="/Applications/adt-bundle-mac-x86_64/sdk/tools:/Applications/adt-bundle-mac-x86_64/sdk/platform-tools:$PATH"
 #export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
 alias c=clear
