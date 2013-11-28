@@ -69,6 +69,8 @@ alias tmux='tmux -2 new -s $(basename $(pwd))'
 alias tm=tmux
 alias tml='tmux list-sessions'
 alias hn='hn -c | less'
+alias vimrc='vim ~/.vimrc'
+alias zshrc='vim ~/.zshrc'
 
 # Sublime
 alias st='subl'

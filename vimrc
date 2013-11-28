@@ -30,6 +30,8 @@ noremap <DOWN> <NOP>
 noremap <LEFT> <NOP>
 noremap <RIGHT> <NOP>
 
+nnoremap gb <C-o>
+
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
@@ -70,9 +72,28 @@ Bundle 'othree/javascript-libraries-syntax.vim'
 " Vim Markdown runtime files
 Bundle 'tpope/vim-markdown'
 
+" surround.vim: quoting/parenthesizing made simple
+Bundle 'tpope/vim-surround'
+
+" commentary.vim: comment stuff out
+Bundle 'tpope/vim-commentary'
+
+" capslock.vim: Software caps lock
+Bundle 'tpope/vim-capslock'
+
+" repeat.vim: enable repeating supported plugin maps with .
+Bundle 'tpope/vim-repeat'
+
+" The ultimate statusline/prompt utility.
+"Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+"Bundle 'bling/vim-airline'
+" let g:Powerline_symbols = 'fancy'
+"set laststatus=2
+"set noshowmode
+
 " code autocompletion
 " NOTE: Requires extra compilation setup
-Bundle 'Valloric/YouCompleteMe'
+" Bundle 'Valloric/YouCompleteMe'
 
 " Syntax checking hacks for vim
 Bundle 'scrooloose/syntastic'
