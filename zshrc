@@ -60,8 +60,7 @@ alias pd='popd'
 alias md='mkdir'
 alias tv='terminal_velocity ~/Dropbox/NotationalVelocity'
 alias tma='tmux -2 attach -d -t'
-alias tmux='tmux -2 new -s $(basename $(pwd))'
-alias tm=tmux
+alias tm='tmux -2 new -s $(basename $(pwd))'
 alias tml='tmux list-sessions'
 alias hn='hn -c | less'
 alias vimrc='vim ~/.vimrc'
@@ -112,3 +111,7 @@ PROMPT=$'%{$fg_bold[red]%}➜ %{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[b
 
 # Dotfiles update
 source ~/dotfiles/tools/check_for_upgrade.sh
+
+#if [[ ! $TERM =~ screen ]]; then
+#        exec tmux -2
+#fi
