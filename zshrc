@@ -47,6 +47,7 @@ node="$HOME/local/node/bin"
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/share/npm/bin:$herokuPath:$androidPath:$generalPath:$windowsPath:$node
 #export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
+# General
 alias c=clear
 alias cl='clear; ls -lA1h'
 alias ll='ls -lah'
@@ -65,6 +66,7 @@ alias tml='tmux list-sessions'
 alias hn='hn -c | less'
 alias vimrc='vim ~/.vimrc'
 alias zshrc='vim ~/.zshrc'
+alias memory='ps -A u | sort -k 4 -r | head'
 
 # Sublime
 alias st='subl'
