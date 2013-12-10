@@ -1,7 +1,8 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
-EDITOR=vim; export EDITOR
+setopt allexport
+EDITOR=vim; 
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -60,6 +61,7 @@ alias quickweb='python -m SimpleHTTPServer'
 alias pd='popd'
 alias md='mkdir'
 alias tv='terminal_velocity ~/Dropbox/NotationalVelocity'
+alias tmux='tmux -2'
 alias tma='tmux -2 attach -d -t'
 alias tm='tmux -2 new -s $(basename $(pwd))'
 alias tml='tmux list-sessions'

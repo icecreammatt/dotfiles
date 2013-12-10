@@ -62,6 +62,7 @@ Bundle 'Raimondi/delimitMate'
 
 " sublime text like control p
 Bundle 'kien/ctrlp.vim'
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|venv’'
 
 " git diff marks in gutter
 Bundle 'airblade/vim-gitgutter'
@@ -93,7 +94,7 @@ Bundle 'tpope/vim-repeat'
 
 " code autocompletion
 " NOTE: Requires extra compilation setup
-" Bundle 'Valloric/YouCompleteMe'
+Bundle 'Valloric/YouCompleteMe'
 
 " Syntax checking hacks for vim
 Bundle 'scrooloose/syntastic'
