@@ -111,7 +111,7 @@ source ~/.zsh/zshrc.sh
 #}
 
 RPROMPT=$'$(git_super_status)'
-PROMPT=$'%{$fg_bold[red]%}➜ %{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}%{$fg_bold[blue]%} % %{$reset_color%}'
+PROMPT=$'%{$fg_bold[white]%}%M %{$fg_bold[red]%}➜ %{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}%{$fg_bold[blue]%} % %{$reset_color%}'
 
 # Dotfiles update
 source ~/dotfiles/tools/check_for_upgrade.sh
