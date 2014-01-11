@@ -1,1 +1,33 @@
+set nocompatible
+filetype off
+
+set t_Co=256
+syntax on
+set background=dark
+
 set ignorecase
+syntax on
+color molokai
+set hlsearch
+
+set ts=4
+set expandtab
+set shiftwidth=4
+set autoindent
+set cursorline
+set number
+"This unsets the "last search pattern" register by hitting return
+nnoremap <CR> :noh<CR><CR>
+"nnoremap <esc> :noh<return><esc>
+
+noremap H ^
+noremap L $
+noremap 0 <NOP>
+noremap $ <NOP>
+
+noremap <UP> <NOP>
+noremap <DOWN> <NOP>
+noremap <LEFT> <NOP>
+noremap <RIGHT> <NOP>
+
+nnoremap gb <C-o>
