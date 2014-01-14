@@ -85,6 +85,24 @@ Bundle 'tpope/vim-capslock'
 " repeat.vim: enable repeating supported plugin maps with .
 Bundle 'tpope/vim-repeat'
 
+" fugitive.vim: a Git wrapper so awesome, it should be illegal
+Bundle 'tpope/vim-fugitive'
+
+"lean & mean status/tabline for vim that's light as air"
+Bundle 'bling/vim-airline'
+" let g:airline_powerline_fonts = 1
+set laststatus=2
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+let g:airline_symbols.space = "\ua0"
+
+let g:bufferline_echo = 0
+set noshowmode
+set ttimeoutlen=50
+" let g:airline_theme=molokai
+
 " The ultimate statusline/prompt utility.
 "Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 "Bundle 'bling/vim-airline'
