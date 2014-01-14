@@ -90,18 +90,24 @@ Bundle 'tpope/vim-fugitive'
 
 "lean & mean status/tabline for vim that's light as air"
 Bundle 'bling/vim-airline'
-" let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 1
 set laststatus=2
 
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
-let g:airline_symbols.space = "\ua0"
+" if !exists('g:airline_symbols')
+"     let g:airline_symbols = {}
+" endif
+" let g:airline_symbols.space = "\ua0"
 
 let g:bufferline_echo = 0
 set noshowmode
-set ttimeoutlen=50
+set ttimeoutlen=25
+let g:airline#extensions#tabline#enabled = 1
+
 " let g:airline_theme=molokai
+
+" Simple tmux statusline generator with support for powerline symbols and
+" airline integration"
+Bundle 'edkolev/tmuxline.vim'
 
 " The ultimate statusline/prompt utility.
 "Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
@@ -127,3 +133,6 @@ let g:syntastic_warning_symbol='⚠'
 let g:syntastic_check_on_open=1
 " http://oli.me.uk/2013/06/29/equipping-vim-for-javascript/
 "
+
+"A tree explorer plugin for vim.
+Bundle 'scrooloose/nerdtree'
