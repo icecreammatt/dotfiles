@@ -91,6 +91,7 @@ Bundle 'tpope/vim-fugitive'
 "lean & mean status/tabline for vim that's light as air"
 Bundle 'bling/vim-airline'
 let g:airline_powerline_fonts = 1
+let g:airline_theme='powerlineish'
 set laststatus=2
 
 " if !exists('g:airline_symbols')
@@ -103,7 +104,6 @@ set noshowmode
 set ttimeoutlen=25
 let g:airline#extensions#tabline#enabled = 1
 
-" let g:airline_theme=molokai
 
 " Simple tmux statusline generator with support for powerline symbols and
 " airline integration"
@@ -136,3 +136,6 @@ let g:syntastic_check_on_open=1
 
 "A tree explorer plugin for vim.
 Bundle 'scrooloose/nerdtree'
+
+"Vim local themes for powerline
+Bundle 'zhaocai/linepower.vim'
