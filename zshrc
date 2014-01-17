@@ -105,6 +105,7 @@ alias gsl='git stash list'
 alias gsd='git stash show -p stash@{0}'
 alias gmt='git mergetool'
 alias ggg='gf;grom;gsub;'
+alias g4='grh;gf;grom;gsub;'
 
 source ~/.zsh/zshrc.sh
 #precmd() {
