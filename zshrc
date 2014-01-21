@@ -53,8 +53,15 @@ alias c=clear
 alias cl='clear; ls -lA1h'
 alias ll='ls -lah'
 alias l='ls -lh'
-alias o='open . &'
-alias e='explorer . &'
+
+if [[ $OSTYPE == "cygwin" ]]; then
+    alias o='explorer . &'
+    alias e='explorer . &'
+else
+    alias o='open . &'
+    alias e='open . &'
+fi
+
 alias ,='cd ..'
 alias rs='rake setup'
 alias quickweb='python -m SimpleHTTPServer'
