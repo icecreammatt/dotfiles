@@ -17,7 +17,8 @@ set autoindent
 set cursorline
 set number
 "This unsets the "last search pattern" register by hitting return
-nnoremap <esc> :noh<CR><esc>
+"nnoremap <esc> :noh<CR><esc>
+"nnoremap <esc> :noh<return><esc>
 
 " Allows tab to indent and switch between tabs
 vnoremap <Tab> >gv
