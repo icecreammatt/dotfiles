@@ -126,6 +126,12 @@ Bundle 'edkolev/tmuxline.vim'
 " NOTE: Requires extra compilation setup
 Bundle 'Valloric/YouCompleteMe'
 
+" Syntax Highlighting for Stylus
+Bundle 'wavded/vim-stylus'
+
+" Vim Jade template engine syntax highlighting and indention
+Bundle 'digitaltoad/vim-jade'
+
 " Syntax checking hacks for vim
 Bundle 'scrooloose/syntastic'
 let g:syntastic_javascript_checkers = ['jshint']
