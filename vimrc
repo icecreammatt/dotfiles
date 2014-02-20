@@ -1,5 +1,6 @@
 set nocompatible
 filetype off
+let mapleader = ","
 
 set t_Co=256
 syntax on
@@ -35,6 +36,9 @@ noremap <UP> <NOP>
 noremap <DOWN> <NOP>
 noremap <LEFT> <NOP>
 noremap <RIGHT> <NOP>
+
+" Markdown preview
+nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr> :redraw!<cr>
 
 nnoremap gb <C-o>
 
