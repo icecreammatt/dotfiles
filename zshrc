@@ -45,7 +45,7 @@ generalPath="/usr/bin:/bin:/usr/sbin:/sbin"
 windowsPath="/c/Windows/System32:/c/Program Files/Perforce"
 node="$HOME/local/node/bin"
 
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/share/npm/bin:$herokuPath:$androidPath:$generalPath:$windowsPath:$node
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/share/npm/bin:$herokuPath:$androidPath:$generalPath:$windowsPath:$node:/usr/local/mysql/bin
 #export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
 # General

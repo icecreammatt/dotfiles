@@ -155,3 +155,6 @@ Bundle 'scrooloose/nerdtree'
 
 "Vim local themes for powerline
 Bundle 'zhaocai/linepower.vim'
+
+"Seamless navigation between tmux panes and vim splits
+Bundle 'christoomey/vim-tmux-navigator'
