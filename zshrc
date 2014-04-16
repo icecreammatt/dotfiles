@@ -48,6 +48,7 @@ export PATH=$HOME/bin:/usr/local/bin:/usr/local/share/npm/bin:$herokuPath:$andro
 [ -e "${HOME}/.zsh_aliases" ] && source "${HOME}/.zsh_aliases"
 [ -e "${HOME}/.zshrc_local" ] && source "${HOME}/.zshrc_local"
 
+PROMPT='%{$fg_bold[green]%}> %{$fg[white]%} '
 # RPROMPT=$'$(git_super_status)'
 # PROMPT=$'%{$fg_bold[white]%}%M %{$fg_bold[red]%}➜ %{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}%{$fg_bold[blue]%} % %{$reset_color%}'
 
