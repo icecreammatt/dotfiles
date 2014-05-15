@@ -37,6 +37,19 @@ noremap <DOWN> <NOP>
 noremap <LEFT> <NOP>
 noremap <RIGHT> <NOP>
 
+map <leader>l <Plug>(easymotion-lineforward)
+map <leader>j <Plug>(easymotion-j)
+map <leader>k <Plug>(easymotion-k)
+map <leader>h <Plug>(easymotion-linebackward)
+
+let g:EasyMotion_startofline = 0 " keep cursor column when JK motion
+
+map / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+
+map n <Plug>(easymotion-next)
+map N <Plug>(easymotion-prev)
+
 " Markdown preview
 nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr> :redraw!<cr>
 
@@ -158,3 +171,6 @@ Bundle 'zhaocai/linepower.vim'
 
 "Seamless navigation between tmux panes and vim splits
 Bundle 'christoomey/vim-tmux-navigator'
+
+"Vim motions on speed!
+Bundle 'Lokaltog/vim-easymotion'
