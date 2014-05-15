@@ -1,8 +1,10 @@
 BoldAsFont=no
-Transparency=medium
+Transparency=off
 CursorType=block
 FontHeight=12
 Term=xterm-256color
 Scrollbar=none
 FontIsBold=no
 CtrlShiftShortcuts=yes
+Font=Consolas
+OpaqueWhenFocused=no
