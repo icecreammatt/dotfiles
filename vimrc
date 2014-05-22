@@ -17,6 +17,10 @@ set shiftwidth=4
 set autoindent
 set cursorline
 set number
+if $TMUX == ''
+    set clipboard+=unnamed
+endif
+
 "This unsets the "last search pattern" register by hitting return
 "nnoremap <esc> :noh<CR><esc>
 "nnoremap <esc> :noh<return><esc>
