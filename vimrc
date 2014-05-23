@@ -41,6 +41,8 @@ noremap <DOWN> <NOP>
 noremap <LEFT> <NOP>
 noremap <RIGHT> <NOP>
 
+imap jk <Esc>
+
 map <leader>l <Plug>(easymotion-lineforward)
 map <leader>j <Plug>(easymotion-j)
 map <leader>k <Plug>(easymotion-k)
