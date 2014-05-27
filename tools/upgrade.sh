@@ -1,6 +1,22 @@
+#/bin/bash
 printf '\033[0;34m%s\033[0m\n' "Upgrading Dotfiles"
 cd "$dotfiles"
-if git pull --rebase origin master
+git stash save
+git pull --rebase origin master
+rebaseSuccess=$?
+if [[ $rebaseSuccess ]]
+then
+    echo 'Rebase Worked!';
+fi
+
+git stash apply stash@{0}
+stashApplySuccess=$?
+if [[ $stashApplySuccess ]]
+then
+    echo 'Stash Apply Worked!';
+fi
+
+if [[ $rebaseSuccess && $stashApplySuccess ]]
 then
   printf '\033[0;32m%s\033[0m\n' '    ____          __   ____ _  __           '
   printf '\033[0;32m%s\033[0m\n' '   / __ \ ____   / /_ / __/(_)/ /___   _____'
