@@ -12,12 +12,6 @@ EDITOR=vim;
 # ZSH_THEME="agnoster"
 ZSH_THEME="terminalparty"
 
-# Comment this out to disable bi-weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment to change how many often would you like to wait before auto-updates occur? (in days)
-# export UPDATE_ZSH_DAYS=13
-
 # Uncomment following line if you want to disable autosetting terminal title.
 # DISABLE_AUTO_TITLE="true"
 
@@ -31,19 +25,10 @@ plugins=(git st stt)
 
 source $ZSH/oh-my-zsh.sh
 
-herokuPath="/usr/local/heroku/bin"
-androidPath="/Applications/adt-bundle-mac-x86_64/sdk/tools:/Applications/adt-bundle-mac-x86_64/sdk/platform-tools"
-generalPath="/usr/bin:/bin:/usr/sbin:/sbin"
+generalPath="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 windowsPath="/c/Windows/System32:/c/Program Files/Perforce"
-node="$HOME/local/node/bin"
 
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/share/npm/bin:$herokuPath:$androidPath:$generalPath:$windowsPath:$node:/usr/local/mysql/bin
-#export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
-
-# source ~/.zsh/zshrc.sh
-# precmd() {
-#     update_current_git_vars
-# }
+export PATH=$HOME/bin:$generalPath:$windowsPath
 
 [ -e "${HOME}/.zsh_aliases" ] && source "${HOME}/.zsh_aliases"
 [ -e "${HOME}/.zshrc_local" ] && source "${HOME}/.zshrc_local"
@@ -55,10 +40,6 @@ PROMPT='%{$fg_bold[green]%}>%{$fg[white]%} '
 # Dotfiles update
 source ~/dotfiles/tools/check_for_upgrade.sh
 
-#if [[ ! $TERM =~ screen ]]; then
-#        exec tmux -2
-#fi
-#
 # whiteboard () {
 #     convert $1 -morphology Convolve DoG:15,100,0 -negate -normalize -blur 0x1 -channel RBG -level 60%,91%,0.1 $2
 # }
