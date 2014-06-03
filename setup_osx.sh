@@ -10,9 +10,6 @@ defaults write com.apple.Finder AppleShowAllFiles ON
 
 # Remove dock delay time
 defaults write com.apple.Dock autohide-delay -float 0 && killall Dock
-
-# Add back dock delay time
-defaults delete com.apple.Dock autohide-delay && killall Dock
  
 # Save screenshots into Pictures/Screenshots
 mkdir ~/Pictures/Screenshots
