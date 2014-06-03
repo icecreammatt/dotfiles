@@ -1,14 +1,12 @@
 #!/bin/bash
 # OSX Tweaks
 
+# Fix home and end keys
 mkdir $HOME/Library/KeyBindings
 cp $HOME/dotfiles/resources/DefaultKeyBindings.dict ~/Library/KeyBindings
 
 # Show hidden files
 defaults write com.apple.Finder AppleShowAllFiles ON
-
-# Turn all files to off
-defaults write com.apple.Finder AppleShowAllFiles OFF
 
 # Remove dock delay time
 defaults write com.apple.Dock autohide-delay -float 0 && killall Dock
@@ -24,6 +22,8 @@ killall SystemUIServer
 # Install Homebrew
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 
+# Install basics
 brew install vim git nodejs wget curl htop gist zsh
 
-npm install -g jshint tldr
+# Install node basics
+npm install -g jshint tldr gulp bower
