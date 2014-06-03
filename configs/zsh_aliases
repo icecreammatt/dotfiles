@@ -10,6 +10,7 @@ alias essh='vim ~/.ssh/config'
 alias vhosts='less /etc/hosts'
 alias ehosts='sudo vim /etc/hosts'
 alias ealias='vim ~/.zsh_aliases'
+alias vim="stty stop '' -ixoff; vim"
 
 if [[ $OSTYPE == "cygwin" ]]; then
     alias o='explorer . &'

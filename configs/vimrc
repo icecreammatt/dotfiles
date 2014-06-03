@@ -43,6 +43,10 @@ noremap <RIGHT> <NOP>
 
 imap jk <Esc>
 
+noremap <c-s> :w<CR>
+imap <c-s> <Esc>:w<CR>a
+imap <c-s> <Esc><c-s>
+
 map <leader>l <Plug>(easymotion-lineforward)
 map <leader>j <Plug>(easymotion-j)
 map <leader>k <Plug>(easymotion-k)
