@@ -6,3 +6,4 @@ vim +BundleInstall +qall
 
 cd ~/.vim/bundle/YouCompleteMe/
 source install.sh
+cd ~
