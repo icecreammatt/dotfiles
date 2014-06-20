@@ -10,5 +10,5 @@ touch ~/.zshrc_local
 mkdir ~/bin 2> /dev/null
 
 # Setup dotfile
-source ./setup_links.sh
-source ./setup_vim.sh
+. setup_links.sh
+. setup_vim.sh
