@@ -2,8 +2,8 @@
 # OSX Tweaks
 
 # Fix home and end keys
-mkdir $HOME/Library/KeyBindings
-cp $HOME/dotfiles/resources/DefaultKeyBindings.dict ~/Library/KeyBindings
+mkdir $HOME/Library/KeyBindings 2> /dev/null
+cp $HOME/dotfiles/resources/DefaultKeyBinding.dict ~/Library/KeyBindings
 
 # Show hidden files
 defaults write com.apple.Finder AppleShowAllFiles ON
@@ -21,7 +21,7 @@ defaults write com.apple.Dock autohide-delay -float 0 && killall Dock
 defaults write com.apple.dt.Xcode DVTTextShowLineNumbers YES
  
 # Save screenshots into Pictures/Screenshots
-mkdir ~/Pictures/Screenshots
+mkdir ~/Pictures/Screenshots 2> /dev/null
 defaults write com.apple.screencapture location ~/Pictures/Screenshots/
 killall SystemUIServer
 
