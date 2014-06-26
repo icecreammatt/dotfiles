@@ -1,7 +1,7 @@
 BoldAsFont=no
 Transparency=off
 CursorType=block
-FontHeight=12
+FontHeight=11
 Term=xterm-256color
 Scrollbar=none
 FontIsBold=no
