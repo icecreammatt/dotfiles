@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 printf '\033[0;34m%s\033[0m\n' "Upgrading Dotfiles"
 cd "$dotfiles"
 git stash save
