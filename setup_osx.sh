@@ -8,6 +8,12 @@ cp $HOME/dotfiles/resources/DefaultKeyBindings.dict ~/Library/KeyBindings
 # Show hidden files
 defaults write com.apple.Finder AppleShowAllFiles ON
 
+# Show file extensions
+defaults write com.apple.finder AppleShowAllExtensions -boolean true
+
+# Enable dev mode for safari
+defaults write com.apple.Safari IncludeDevelopMenu -boolean true
+
 # Remove dock delay time
 defaults write com.apple.Dock autohide-delay -float 0 && killall Dock
 
