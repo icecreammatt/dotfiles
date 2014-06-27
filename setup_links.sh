@@ -23,7 +23,3 @@ done
 mv $HOME/.vim $HOME/$backupDirectory 2> /dev/null
 ln -s $HOME/dotfiles/directories/vim $HOME/.vim
 
-mv ~/Library/Application Support/Sublime\ Text\ 2/Packages/User/Preferences.sublime-settings $backupDirectory 2> /dev/null
-ln -s ./Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Preferences.sublime-settings 2> /dev/null
-
-ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ~/bin/subl 2> /dev/null

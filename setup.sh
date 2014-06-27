@@ -12,3 +12,14 @@ mkdir ~/bin 2> /dev/null
 # Setup dotfile
 . $HOME/dotfiles/setup_links.sh
 . $HOME/dotfiles/setup_vim.sh
+
+case "$OSTYPE" in
+  solaris*) echo "SOLARIS" ;;
+  darwin*)  echo "OSX" 
+      . $HOME/dotfiles/setup_osx.sh
+      
+      ;; 
+  linux*)   echo "LINUX" ;;
+  bsd*)     echo "BSD" ;;
+  *)        echo "unknown: $OSTYPE" ;;
+esac
