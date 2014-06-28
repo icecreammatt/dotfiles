@@ -11,6 +11,7 @@ alias vhosts='less /etc/hosts'
 alias ehosts='sudo vim /etc/hosts'
 alias ealias='vim ~/.zsh_aliases'
 alias vim="stty stop '' -ixoff; vim"
+alias udot="$HOME/dotfiles/tools/upgrade.sh"
 
 if [[ $OSTYPE == "cygwin" ]]; then
     alias o='explorer . &'
