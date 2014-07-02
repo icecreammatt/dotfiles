@@ -149,10 +149,6 @@ Bundle 'edkolev/tmuxline.vim'
 "set laststatus=2
 "set noshowmode
 
-" code autocompletion
-" NOTE: Requires extra compilation setup
-Bundle 'Valloric/YouCompleteMe'
-
 " Syntax Highlighting for Stylus
 Bundle 'wavded/vim-stylus'
 
@@ -190,3 +186,8 @@ Bundle 'christoomey/vim-tmux-navigator'
 
 "Vim motions on speed!
 Bundle 'Lokaltog/vim-easymotion'
+
+" code autocompletion
+" NOTE: Requires extra compilation setup
+" Bundle 'Valloric/YouCompleteMe'
+
