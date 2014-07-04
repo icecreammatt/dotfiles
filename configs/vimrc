@@ -189,5 +189,5 @@ Bundle 'Lokaltog/vim-easymotion'
 
 " code autocompletion
 " NOTE: Requires extra compilation setup
-" Bundle 'Valloric/YouCompleteMe'
+Bundle 'Valloric/YouCompleteMe'
 
