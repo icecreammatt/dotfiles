@@ -40,7 +40,7 @@ alias stt='subl .'
 alias subl='subl'
 
 # Git
-alias g='git status'
+alias g='git status -s'
 alias gs='git show'
 alias gf='git fetch --all'
 alias gl='git log'
