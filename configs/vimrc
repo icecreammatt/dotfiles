@@ -17,6 +17,7 @@ set shiftwidth=4
 set autoindent
 set cursorline
 set number
+set backspace=indent,eol,start
 if $TMUX == ''
     set clipboard+=unnamed
 endif
