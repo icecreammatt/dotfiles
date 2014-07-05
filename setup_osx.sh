@@ -37,6 +37,9 @@ killall Dock
 # Install Homebrew
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 
+# Update Brew in case it was already installed and not up to date
+brew update
+
 # Install basics
 brew install vim git nodejs wget curl htop gist zsh
 
