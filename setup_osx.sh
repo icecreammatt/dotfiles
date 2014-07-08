@@ -43,5 +43,8 @@ brew update
 # Install basics
 brew install vim git nodejs wget curl htop gist zsh tmux
 
+# Ready to Brew
+brew doctor
+
 # Install node basics
 npm install -g jshint tldr gulp bower
