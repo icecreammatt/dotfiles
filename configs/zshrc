@@ -25,10 +25,11 @@ plugins=(git st stt)
 
 source $ZSH/oh-my-zsh.sh
 
+GOPATH="$HOME/go"
 generalPath="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 windowsPath="/c/Windows/System32:/c/Program Files/Perforce"
 
-export PATH=$HOME/bin:$generalPath:$windowsPath
+export PATH=$HOME/bin:$generalPath:$GOPATH:$windowsPath
 
 [ -e "${HOME}/.zsh_aliases" ] && source "${HOME}/.zsh_aliases"
 [ -e "${HOME}/.zshrc_local" ] && source "${HOME}/.zshrc_local"
