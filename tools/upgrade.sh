@@ -4,14 +4,14 @@ cd "$dotfiles"
 git stash save
 git pull --rebase origin master
 rebaseSuccess=$?
-if [[ $rebaseSuccess ]]
+if [ $rebaseSuccess ]
 then
     echo 'Rebase Worked!';
 fi
 
 git stash apply stash@{0}
 stashApplySuccess=$?
-if [[ $stashApplySuccess ]]
+if [ $stashApplySuccess ]
 then
     echo 'Stash Apply Worked!';
 fi
