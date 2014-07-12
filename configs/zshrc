@@ -25,7 +25,7 @@ plugins=(git st stt)
 
 source $ZSH/oh-my-zsh.sh
 
-GOPATH="$HOME/go"
+GOPATH="$HOME/go:$HOME/go/bin"
 generalPath="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 windowsPath="/c/Windows/System32:/c/Program Files/Perforce"
 
