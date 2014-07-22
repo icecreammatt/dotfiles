@@ -16,7 +16,7 @@ then
     echo 'Stash Apply Worked!';
 fi
 
-if [[ $rebaseSuccess && $stashApplySuccess ]]
+if [ $rebaseSuccess ] && [ $stashApplySuccess ]
 then
   printf '\033[0;32m%s\033[0m\n' '    ____          __   ____ _  __           '
   printf '\033[0;32m%s\033[0m\n' '   / __ \ ____   / /_ / __/(_)/ /___   _____'
