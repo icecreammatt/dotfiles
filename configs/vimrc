@@ -34,8 +34,6 @@ nnoremap <TAB> :bnext<CR>
 
 noremap H ^
 noremap L $
-noremap 0 <NOP>
-noremap $ <NOP>
 
 noremap <UP> <NOP>
 noremap <DOWN> <NOP>
@@ -43,6 +41,8 @@ noremap <LEFT> <NOP>
 noremap <RIGHT> <NOP>
 
 imap jk <Esc>
+
+map <C-n> :NERDTreeToggle<CR>
 
 noremap <c-s> :w<CR>
 imap <c-s> <Esc>:w<CR>a
