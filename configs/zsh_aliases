@@ -13,6 +13,7 @@ alias ealias='vim ~/.zsh_aliases'
 alias vim="stty stop '' -ixoff; vim"
 alias udot="$HOME/dotfiles/tools/upgrade.sh"
 alias vi="stty stop '' -ixoff; vim"
+alias df="df -h"
 
 if [[ $OSTYPE == "cygwin" ]]; then
     alias o='explorer . &'
