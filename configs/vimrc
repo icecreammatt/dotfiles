@@ -1,75 +1,7 @@
 set nocompatible
 filetype off
-let mapleader = ","
 
-set t_Co=256
-syntax on
-set background=dark
-
-set ignorecase
-syntax on
-color molokai
-set hlsearch
-
-set ts=4
-set expandtab
-set shiftwidth=4
-set autoindent
-set cursorline
-set number
-set backspace=indent,eol,start
-if $TMUX == ''
-    set clipboard+=unnamed
-endif
-
-"This unsets the "last search pattern" register by hitting return
-"nnoremap <esc> :noh<CR><esc>
-"nnoremap <esc> :noh<return><esc>
-
-" Allows tab to indent and switch between tabs
-vnoremap <Tab> >gv
-vnoremap <S-Tab> <gv
-nnoremap <S-TAB> :bprev<CR>
-nnoremap <TAB> :bnext<CR>
-
-noremap H ^
-noremap L $
-
-noremap <UP> <NOP>
-noremap <DOWN> <NOP>
-noremap <LEFT> <NOP>
-noremap <RIGHT> <NOP>
-
-imap jk <Esc>
-
-map <C-n> :NERDTreeToggle<CR>
-
-noremap <c-s> :w<CR>
-imap <c-s> <Esc>:w<CR>a
-imap <c-s> <Esc><c-s>
-
-map <leader>l <Plug>(easymotion-lineforward)
-map <leader>j <Plug>(easymotion-j)
-map <leader>k <Plug>(easymotion-k)
-map <leader>h <Plug>(easymotion-linebackward)
-
-" Use <leader>p to toggle between 'paste' and 'nopaste'
-nmap <leader>p :set paste!<CR>
-
-let g:EasyMotion_startofline = 0 " keep cursor column when JK motion
-
-map / <Plug>(easymotion-sn)
-omap / <Plug>(easymotion-tn)
-
-map n <Plug>(easymotion-next)
-map N <Plug>(easymotion-prev)
-
-" Markdown preview
-nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr> :redraw!<cr>
-
-nnoremap gb <C-o>
-
-set rtp+=~/.vim/bundle/vundle.vim
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " let Vundle manage Vundle
@@ -200,3 +132,75 @@ Plugin 'fatih/vim-go'
 call vundle#end()
 filetype on
 "filetype plugin indent on
+
+""""""" END PLUGINS
+
+let mapleader = ","
+
+set t_Co=256
+syntax on
+set background=dark
+
+set ignorecase
+syntax on
+color molokai
+set hlsearch
+
+set ts=4
+set expandtab
+set shiftwidth=4
+set autoindent
+set cursorline
+set number
+set backspace=indent,eol,start
+if $TMUX == ''
+    set clipboard+=unnamed
+endif
+
+"This unsets the "last search pattern" register by hitting return
+"nnoremap <esc> :noh<CR><esc>
+"nnoremap <esc> :noh<return><esc>
+
+" Allows tab to indent and switch between tabs
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
+nnoremap <S-TAB> :bprev<CR>
+nnoremap <TAB> :bnext<CR>
+
+noremap H ^
+noremap L $
+
+noremap <UP> <NOP>
+noremap <DOWN> <NOP>
+noremap <LEFT> <NOP>
+noremap <RIGHT> <NOP>
+
+imap jk <Esc>
+
+map <C-n> :NERDTreeToggle<CR>
+
+noremap <c-s> :w<CR>
+imap <c-s> <Esc>:w<CR>a
+imap <c-s> <Esc><c-s>
+
+map <leader>l <Plug>(easymotion-lineforward)
+map <leader>j <Plug>(easymotion-j)
+map <leader>k <Plug>(easymotion-k)
+map <leader>h <Plug>(easymotion-linebackward)
+
+" Use <leader>p to toggle between 'paste' and 'nopaste'
+nmap <leader>p :set paste!<CR>
+
+let g:EasyMotion_startofline = 0 " keep cursor column when JK motion
+
+map / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+
+map n <Plug>(easymotion-next)
+map N <Plug>(easymotion-prev)
+
+" Markdown preview
+nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr> :redraw!<cr>
+
+nnoremap gb <C-o>
+
