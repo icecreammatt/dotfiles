@@ -1,5 +1,6 @@
 ## dotfiles
 
+> __NOTE:__ Be sure to update the `.gitconfig` so it uses the proper email address.
 
 ### Mac Users
 
