@@ -8,6 +8,9 @@ ln -s ./Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Tex
 # Add blur for Alfred Theme
 defaults write com.runningwithcrayons.Alfred-2 experimentalBlur -int 15
 
+# Hide Scrollbar
+defaults write com.apple.Terminal AppleShowScrollbars WhenScrolling
+
 # Add subl to bin for easy terminal access
 ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ~/bin/subl 2> /dev/null
 
