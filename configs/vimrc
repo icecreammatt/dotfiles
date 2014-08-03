@@ -177,7 +177,8 @@ noremap <RIGHT> <NOP>
 
 imap jk <Esc>
 
-map <C-n> :NERDTreeToggle<CR>
+map <leader>b :NERDTreeToggle<CR>
+map <leader>n :set number!<CR>
 
 noremap <c-s> :w<CR>
 imap <c-s> <Esc>:w<CR>a
