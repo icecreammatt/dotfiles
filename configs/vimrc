@@ -4,6 +4,12 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+" iA Writer vim colorscheme
+" Plugin 'https://github.com/jacekd/vim-iawriter'
+
+" Simulating a vaguely WriteRoom-like environment in Vim. 
+Plugin 'https://github.com/mikewest/vimroom'
+
 " let Vundle manage Vundle
 " required! 
 Plugin 'gmarik/vundle'
@@ -59,7 +65,8 @@ Plugin 'tpope/vim-fugitive'
 "lean & mean status/tabline for vim that's light as air"
 Plugin 'bling/vim-airline'
 let g:airline_powerline_fonts = 1
-let g:airline_theme='powerlineish'
+"let g:airline_theme='powerlineish'
+let g:airline_theme='zenburn'
 set laststatus=2
 
 " if !exists('g:airline_symbols')
@@ -70,8 +77,23 @@ set laststatus=2
 let g:bufferline_echo = 0
 set noshowmode
 set ttimeoutlen=25
-let g:airline#extensions#tabline#enabled = 1
 
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_alt_sep = ' '
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#right_alt_sep = ' '
+let g:airline#extensions#tabline#right_sep = ' '
+
+let g:airline#extensions#whitespace#enabled = 0
+"let g:airline_section_z = '' " Hide bottom right hand content
+
+" Only show the tabs if at least 3 files are open
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_min_count = 3
+
+" Remove > and < style
+let g:airline_left_sep = '' 
+let g:airline_right_sep = ''
 
 " Simple tmux statusline generator with support for powerline symbols and
 " airline integration"
@@ -205,3 +227,16 @@ nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr> :redraw!<cr>
 
 nnoremap gb <C-o>
 
+" turn-on distraction free writing mode for markdown files
+au BufNewFile,BufRead *.{md,mdown,mkd,mkdn,markdown,mdwn} call DistractionFreeWriting()
+function! DistractionFreeWriting()
+    "colorscheme iawriter
+    "set background=light
+    set lines=40 columns=120           " size of the editable area
+    set laststatus=0                   " don't show status line
+    set noruler                        " don't show ruler
+    set linebreak                      " break the lines on words
+    set nonumber                       " hide line numbers
+endfunction
+
+map <F5> :setlocal spell! spelllang=en_us<CR>
