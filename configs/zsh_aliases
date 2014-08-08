@@ -14,6 +14,7 @@ alias vim="stty stop '' -ixoff; vim"
 alias udot="$HOME/dotfiles/tools/upgrade.sh"
 alias vi="stty stop '' -ixoff; vim"
 alias df="df -h"
+alias dus="du -sh"
 
 if [[ $OSTYPE == "cygwin" ]]; then
     alias o='explorer . &'
