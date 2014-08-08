@@ -15,6 +15,7 @@ alias udot="$HOME/dotfiles/tools/upgrade.sh"
 alias vi="stty stop '' -ixoff; vim"
 alias df="df -h"
 alias dus="du -sh"
+alias devenv="docker run -i -v $(pwd):/home/data -t icecreammatt/dev /bin/zsh"
 
 if [[ $OSTYPE == "cygwin" ]]; then
     alias o='explorer . &'
