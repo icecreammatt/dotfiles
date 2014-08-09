@@ -1,21 +1,30 @@
-# General
-alias cl='clear; ls -lA1h'
-alias ll='ls -lah'
-alias l='ls -lh'
-alias rzsh='source ~/.zshrc'
+# Quick Edits
 alias zshrc='vim ~/.zshrc'
 alias vimrc='vim ~/.vimrc'
+alias rzsh='source ~/.zshrc'
 alias vssh='less ~/.ssh/config'
 alias essh='vim ~/.ssh/config'
 alias vhosts='less /etc/hosts'
 alias ehosts='sudo vim /etc/hosts'
 alias ealias='vim ~/.zsh_aliases'
-alias vim="stty stop '' -ixoff; vim"
 alias udot="$HOME/dotfiles/tools/upgrade.sh"
+
+# General
+alias tv='terminal_velocity ~/Dropbox/NotationalVelocity'
+alias hn='hn -c | less'
 alias vi="stty stop '' -ixoff; vim"
+alias vim="stty stop '' -ixoff; vim"
+alias ,='cd ..'
+alias cl='clear; ls -lA1h'
+alias ll='ls -lah'
+alias l='ls -lh'
 alias df="df -h"
 alias dus="du -sh"
-alias devenv="docker run -i -v $(pwd):/home/data -t icecreammatt/devenv /bin/zsh"
+alias rs='rake setup'
+alias quickweb='python -m SimpleHTTPServer'
+alias pd='popd'
+alias md='mkdir'
+alias memory='ps -A u | sort -k 4 -r | head'
 
 if [[ $OSTYPE == "cygwin" ]]; then
     alias o='explorer . &'
@@ -25,18 +34,14 @@ else
     alias e='open . &'
 fi
 
-alias ,='cd ..'
-alias rs='rake setup'
-alias quickweb='python -m SimpleHTTPServer'
-alias pd='popd'
-alias md='mkdir'
-alias tv='terminal_velocity ~/Dropbox/NotationalVelocity'
+# Docker
+alias devenv="docker run -i -v $(pwd):/home/data -t icecreammatt/devenv /bin/zsh"
+
+# tmux
 alias tmux='tmux -2'
 alias tma='tmux -2 attach -d -t'
 alias tm='tmux -2 new -s $(basename $(pwd))'
 alias tml='tmux list-sessions'
-alias hn='hn -c | less'
-alias memory='ps -A u | sort -k 4 -r | head'
 
 # Sublime
 alias st='subl'
