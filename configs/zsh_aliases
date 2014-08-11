@@ -35,7 +35,9 @@ else
 fi
 
 # Docker
-alias devenv="docker run -i -v $(pwd):/home/data -t icecreammatt/devenv /bin/zsh"
+function devenv() {
+    docker run -i -v $(pwd):/home -t icecreammatt/devenv /bin/zsh
+}
 
 # tmux
 alias tmux='tmux -2'
