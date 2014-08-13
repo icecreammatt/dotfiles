@@ -221,7 +221,7 @@ nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr> :redraw!<cr>
 nnoremap gb <C-o>
 
 " turn-on distraction free writing mode for markdown files
-au BufNewFile,BufRead *.{md,mdown,mkd,mkdn,markdown,mdwn} call DistractionFreeWriting()
+au BufNewFile,BufRead *.{txt,md,mdown,mkd,mkdn,markdown,mdwn} call DistractionFreeWriting()
 function! DistractionFreeWriting()
     "colorscheme iawriter
     "set background=light
@@ -230,6 +230,7 @@ function! DistractionFreeWriting()
     set noruler                        " don't show ruler
     set linebreak                      " break the lines on words
     set nonumber                       " hide line numbers
+    set filetype=markdown
 endfunction
 
 map <F5> :setlocal spell! spelllang=en_us<CR>
