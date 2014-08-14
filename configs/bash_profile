@@ -1,5 +1,5 @@
-PS1='$(networksetup -getcomputername):\W \u\$ '
-#PS1="\W \$ "
+#PS1='$(networksetup -getcomputername):\W \u\$ '
+PS1="\W \$ "
 
 # Alias List
 alias ll='ls -lh'
