@@ -182,6 +182,9 @@ vnoremap <S-Tab> <gv
 nnoremap <S-TAB> :bprev<CR>
 nnoremap <TAB> :bnext<CR>
 
+" Disable annoying lookup
+noremap K <Esc>
+
 noremap H ^
 noremap L $
 
