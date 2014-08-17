@@ -15,7 +15,6 @@ echo "Oh-My-Zsh Installed"
 . $HOME/dotfiles/setup_vim.sh
 
 case "$OSTYPE" in
-  solaris*) echo "SOLARIS" ;;
   darwin*)  echo "OSX" 
       . $HOME/dotfiles/setup_osx.sh
       
