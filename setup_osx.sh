@@ -5,9 +5,6 @@
 mv ~/Library/Application Support/Sublime\ Text\ 2/Packages/User/Preferences.sublime-settings $backupDirectory 2> /dev/null
 ln -s ./Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Preferences.sublime-settings 2> /dev/null
 
-# Add blur for Alfred Theme
-defaults write com.runningwithcrayons.Alfred-2 experimentalBlur -int 15
-
 # Hide Scrollbar
 defaults write com.apple.Terminal AppleShowScrollbars WhenScrolling
 
