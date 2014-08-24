@@ -36,14 +36,16 @@ then
     then
       _upgrade_dotfiles
     else
-      echo "[Dotfiles] Would you like to check for updates?"
-      echo "Type Y to update dotfiles: \c"
+      echo "[Dotfiles] Would you like to check for updates? [Y/n]"
       read line
-      if [ "$line" = Y ] || [ "$line" = y ]; then
-        _upgrade_dotfiles
-      else
-        _update_dotfiles_update
-      fi
+        case "$line" in
+            (N|n)
+                _update_dotfiles_update
+            ;;
+            *)
+                _upgrade_dotfiles
+            ;;
+        esac
     fi
   fi
 else
