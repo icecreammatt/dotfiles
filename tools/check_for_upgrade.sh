@@ -36,7 +36,7 @@ then
     then
       _upgrade_dotfiles
     else
-      echo "[Dotfiles] Would you like to check for updates? [Y/n]"
+      echo "[Dotfiles] Would you like to check for updates? [Y/n] \c"
       read line
         case "$line" in
             (N|n)
