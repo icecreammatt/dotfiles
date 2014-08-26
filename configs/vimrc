@@ -144,6 +144,9 @@ Plugin 'Valloric/YouCompleteMe'
 "Go development plugin for Vim
 Plugin 'fatih/vim-go'
 
+"Typescript syntax files for Vim
+Plugin 'leafgarland/typescript-vim'
+
 call vundle#end()
 filetype on
 "filetype plugin indent on
