@@ -53,4 +53,4 @@ brew install vim git nodejs wget curl htop gist zsh tmux
 brew doctor
 
 # Install node basics
-npm install -g jshint tldr gulp bower
+npm install -g jshint tldr gulp bower typescript
