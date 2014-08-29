@@ -240,3 +240,5 @@ function! DistractionFreeWriting()
 endfunction
 
 map <F5> :setlocal spell! spelllang=en_us<CR>
+
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
