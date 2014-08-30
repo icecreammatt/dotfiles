@@ -1,0 +1,5 @@
+noremap H ^
+noremap L $
+set ignorecase
+set ts=4
+set expandtab
