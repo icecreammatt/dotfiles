@@ -13,6 +13,7 @@ echo "Oh-My-Zsh Installed"
 # Setup dotfile
 . $HOME/dotfiles/setup_links.sh
 . $HOME/dotfiles/setup_vim.sh
+. $HOME/dotfiles/setup_scripts.sh
 
 case "$OSTYPE" in
   darwin*)  echo "OSX" 
