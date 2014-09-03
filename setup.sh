@@ -24,3 +24,6 @@ case "$OSTYPE" in
   bsd*)     echo "BSD" ;;
   *)        echo "unknown: $OSTYPE" ;;
 esac
+
+# Switch to use ssh instead of http 
+git remote set-url origin git@github.com:$github_username/dotfiles.git
