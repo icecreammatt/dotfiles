@@ -19,6 +19,7 @@ alias cl='clear; ls -lA1h'
 alias ll='ls -lah'
 alias l='ls -lh'
 alias df="df -h"
+alias du="du -h"
 alias dus="du -sh"
 alias rs='rake setup'
 alias quickweb='python -m SimpleHTTPServer'
