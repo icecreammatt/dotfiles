@@ -26,6 +26,7 @@ alias quickweb='python -m SimpleHTTPServer'
 alias pd='popd'
 alias md='mkdir'
 alias memory='ps -A u | sort -k 4 -r | head'
+alias diff="diff -u"
 
 if [[ $OSTYPE == "cygwin" ]]; then
     alias o='explorer . &'
