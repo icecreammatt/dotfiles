@@ -5,6 +5,8 @@
 mv ~/Library/Application Support/Sublime\ Text\ 2/Packages/User/Preferences.sublime-settings $backupDirectory 2> /dev/null
 ln -s ./Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Preferences.sublime-settings 2> /dev/null
 
+echo "writing defaults..."
+
 # Hide Scrollbar
 defaults write com.apple.Terminal AppleShowScrollbars WhenScrolling
 
@@ -31,6 +33,9 @@ defaults write com.apple.Safari IncludeDevelopMenu -boolean true
 defaults write com.apple.Dock autohide-delay -float 0 
 # Xcode
 defaults write com.apple.dt.Xcode DVTTextShowLineNumbers YES
+
+# Hide desktop icons
+defaults write com.apple.finder CreateDesktop -bool false
  
 # Save screenshots into Pictures/Screenshots
 mkdir ~/Pictures/Screenshots 2> /dev/null
@@ -41,16 +46,66 @@ killall Finder
 killall Dock
 
 # Install Homebrew
-ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+if test ! $(which brew); 
+then
+    echo "Installing homebrew..."
+    ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+fi
 
+echo "Updating brew..."
 # Update Brew in case it was already installed and not up to date
 brew update
 
 # Install basics
-brew install vim git nodejs wget curl htop gist zsh tmux
+binaries=(
+    vim 
+    git 
+    nodejs 
+    wget 
+    curl 
+    htop 
+    gist 
+    zsh 
+    tmux
+    hub
+    go
+    curl
+    bash
+)
 
+echo "Installing brew binaries"
+brew install ${binaries[@]}
+
+echo "Running brew doctor"
 # Ready to Brew
 brew doctor
 
+brew install caskroom/cask/brew-cask
+
+apps=(
+    grandperspective
+)
+echo "Installing brew apps"
+brew cask install --appdir="/Applications" ${apps[@]}
+
+brew cask alfred link
+
 # Install node basics
-npm install -g jshint tldr gulp bower typescript
+nodepackages=(
+    jshint 
+    tldr 
+    gulp 
+    bower 
+    typescript
+    node-inspector
+    yo
+    bower
+    nws
+)
+
+echo "Installing node packages..."
+for package in "${nodepackages[@]}"
+do
+    echo "Installing:" $package
+    npm install -g $package
+done
