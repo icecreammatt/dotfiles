@@ -25,6 +25,7 @@ generalPath="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 windowsPath="/c/Windows/System32:/c/Program Files/Perforce"
 
 export PATH=$HOME/bin:$generalPath:$GOPATH:$GOBIN:$windowsPath
+export ANSIBLE_HOSTS=$HOME/ansible/hosts
 
 PROMPT='%{$fg_bold[green]%}%{$fg[white]%}%{$reset_color%} '
 
