@@ -147,6 +147,9 @@ Plugin 'fatih/vim-go'
 "Typescript syntax files for Vim
 Plugin 'leafgarland/typescript-vim'
 
+"True Sublime Text style multiple selections for Vim
+Plugin 'kristijanhusak/vim-multiple-cursors'
+
 call vundle#end()
 filetype on
 "filetype plugin indent on
@@ -247,3 +250,9 @@ map <F5> :setlocal spell! spelllang=en_us<CR>
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 autocmd FileType make setlocal noexpandtab
 
+let g:multi_cursor_use_default_mapping=0
+let g:multi_cursor_start_key='<leader>c'
+let g:multi_cursor_next_key='<C-n>'
+let g:multi_cursor_prev_key='<C-p>'
+let g:multi_cursor_skip_key='<C-x>'
+let g:multi_cursor_quit_key='<Esc>'
