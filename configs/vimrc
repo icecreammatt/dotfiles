@@ -52,6 +52,7 @@ Plugin 'tpope/vim-surround'
 
 " commentary.vim: comment stuff out
 Plugin 'tpope/vim-commentary'
+autocmd FileType python set commentstring=#\ %s
 
 " capslock.vim: Software caps lock
 Plugin 'tpope/vim-capslock'
