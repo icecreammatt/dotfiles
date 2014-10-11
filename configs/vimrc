@@ -7,12 +7,15 @@ call vundle#begin()
 " iA Writer vim colorscheme
 " Plugin 'https://github.com/jacekd/vim-iawriter'
 
-" Simulating a vaguely WriteRoom-like environment in Vim. 
-Plugin 'https://github.com/mikewest/vimroom'
-
 " let Vundle manage Vundle
 " required! 
 Plugin 'gmarik/vundle'
+
+" Simulating a vaguely WriteRoom-like environment in Vim. 
+Plugin 'https://github.com/mikewest/vimroom'
+
+" vim syntax for LESS (dynamic CSS)
+Plugin 'groenewege/vim-less'
 
 " javascript syntax
 Plugin 'jelera/vim-javascript-syntax'
