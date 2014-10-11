@@ -7,6 +7,7 @@
 	tool = p4merge
 [core]
 	excludesfile = /Users/matt/.gitignore_global
+    autocrlf = input
 [difftool "sourcetree"]
 	cmd = /Applications/p4merge.app/Contents/MacOS/p4merge \"$LOCAL\" \"$REMOTE\"
 	path = 
