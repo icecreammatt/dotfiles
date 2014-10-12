@@ -25,6 +25,6 @@
 1. Review aliases in `.zsh_aliases`
 
 ## Preview
-> Run `devmux` to get this layout.
+> Run [`devmux`](https://github.com/icecreammatt/scripts/blob/master/devmux.sh) to get this layout.
 
 ![Preview](resources/preview.png)
