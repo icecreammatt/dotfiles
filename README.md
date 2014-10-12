@@ -25,4 +25,5 @@
 1. Review aliases in `.zsh_aliases`
 
 ## Preview
+> Run `devmux` to get this layout.
 ![Preview](resources/preview.png)
