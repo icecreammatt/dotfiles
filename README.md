@@ -26,4 +26,5 @@
 
 ## Preview
 > Run `devmux` to get this layout.
+
 ![Preview](resources/preview.png)
