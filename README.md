@@ -23,3 +23,6 @@
    > The bottom of the `.zshrc` has a check that it will run to auto pull and rebase the dotfiles similar to how the `oh-my-zsh` updater works. Any items which are not checked in are stashed and applied after the pull. For long term items which are not intended to be checked in use the `.zshrc_local` This file is ignored.
    
 1. Review aliases in `.zsh_aliases`
+
+## Preview
+![Preview](resources/preview.png)
