@@ -17,6 +17,9 @@ Plugin 'https://github.com/mikewest/vimroom'
 " vim syntax for LESS (dynamic CSS)
 Plugin 'groenewege/vim-less'
 
+" Vim syntax highlighting for Go templates.
+Plugin 'cespare/vim-go-templates'
+
 " javascript syntax
 Plugin 'jelera/vim-javascript-syntax'
 
