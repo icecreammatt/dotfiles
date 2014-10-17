@@ -29,6 +29,9 @@ Plugin 'helino/vim-json'
 " Vastly improved Javascript indentation and syntax support in Vim.
 Plugin 'pangloss/vim-javascript'
 
+"EditorConfig plugin for Vim http://editorconfig.org
+Plugin 'editorconfig/editorconfig-vim'
+
 " A Vim plugin for visually displaying indent levels in code
 " Plugin 'nathanaelkane/vim-indent-guides'
 " hi IndentGuidesOdd  ctermbg=black
