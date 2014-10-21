@@ -137,7 +137,7 @@ let g:syntastic_check_on_open=1
 
 "A tree explorer plugin for vim.
 Plugin 'scrooloose/nerdtree'
-let NERDTreeIgnore=['\.pyc$', '\.o$', '\~$']
+let NERDTreeIgnore=['\.pyc$', '\.o$', '\~$', 'node_modules$']
 
 "Vim local themes for powerline
 Plugin 'zhaocai/linepower.vim'
