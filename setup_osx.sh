@@ -7,6 +7,9 @@ ln -s ./Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Tex
 
 echo "writing defaults..."
 
+# Block sending search data to apple
+defaults write com.apple.Safari UniversalSearchEnabled -bool false
+
 # Hide Scrollbar
 defaults write com.apple.Terminal AppleShowScrollbars WhenScrolling
 
