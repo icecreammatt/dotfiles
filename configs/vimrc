@@ -20,11 +20,11 @@ Plugin 'groenewege/vim-less'
 " Vim syntax highlighting for Go templates.
 Plugin 'cespare/vim-go-templates'
 
-" javascript syntax
-Plugin 'jelera/vim-javascript-syntax'
-
 " filetype detection and syntax highlightnig for JSON in Vim
 Plugin 'helino/vim-json'
+
+" javascript syntax
+Plugin 'jelera/vim-javascript-syntax'
 
 " Vastly improved Javascript indentation and syntax support in Vim.
 Plugin 'pangloss/vim-javascript'
@@ -62,6 +62,8 @@ Plugin 'tpope/vim-surround'
 " commentary.vim: comment stuff out
 Plugin 'tpope/vim-commentary'
 autocmd FileType python set commentstring=#\ %s
+autocmd FileType bash set commentstring=#\ %s
+autocmd FileType vim set commentstring=\"\ %s
 
 " capslock.vim: Software caps lock
 Plugin 'tpope/vim-capslock'
@@ -123,7 +125,7 @@ Plugin 'cespare/vim-toml'
 
 " Syntax checking hacks for vim
 Plugin 'scrooloose/syntastic'
-let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_javascript_checkers = ['jshint', 'jscs']
 let g:syntastic_error_symbol = '✗'
 let g:syntastic_warning_symbol='⚠'
 "let g:syntastic_auto_jump=1
@@ -261,8 +263,8 @@ endfunction
 
 map <F5> :setlocal spell! spelllang=en_us<CR>
 
-autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 autocmd FileType make setlocal noexpandtab
+autocmd FileType Javascript setlocal shiftwidth=2 tabstop=2
 
 let g:multi_cursor_use_default_mapping=0
 let g:multi_cursor_start_key='<leader>c'
