@@ -1,5 +1,5 @@
 {
-	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"color_scheme": "Packages/User/Monokai (SL).tmTheme",
 	"draw_white_space": "all",
 	"font_size": 13.0,
 	"gutter": true,
@@ -12,7 +12,6 @@
 	"scroll_past_end": true,
 	"soda_classic_tabs": true,
 	"tab_size": 4,
-	"theme": "Soda Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"use_simple_full_screen": true,
