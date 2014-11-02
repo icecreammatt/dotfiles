@@ -17,6 +17,9 @@ Plugin 'https://github.com/mikewest/vimroom'
 " vim syntax for LESS (dynamic CSS)
 Plugin 'groenewege/vim-less'
 
+" Vim syntax highlighting for GCSS
+Plugin 'yosssi/vim-gcss'
+
 " Vim syntax highlighting for Go templates.
 Plugin 'cespare/vim-go-templates'
 
@@ -265,6 +268,7 @@ map <F5> :setlocal spell! spelllang=en_us<CR>
 
 autocmd FileType make setlocal noexpandtab
 autocmd FileType Javascript setlocal shiftwidth=2 tabstop=2
+autocmd FileType gcss setlocal shiftwidth=2 tabstop=2
 
 let g:multi_cursor_use_default_mapping=0
 let g:multi_cursor_start_key='<leader>c'
