@@ -20,6 +20,12 @@ Plugin 'groenewege/vim-less'
 " Vim syntax highlighting for GCSS
 Plugin 'yosssi/vim-gcss'
 
+" vim plugin which formated javascript files by js-beautify
+Plugin 'maksimr/vim-jsbeautify'
+
+" Beautifier for javascript
+Plugin 'einars/js-beautify'
+
 " Vim syntax highlighting for Go templates.
 Plugin 'cespare/vim-go-templates'
 
@@ -268,6 +274,7 @@ map <F5> :setlocal spell! spelllang=en_us<CR>
 
 autocmd FileType make setlocal noexpandtab
 autocmd FileType Javascript setlocal shiftwidth=2 tabstop=2
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
 autocmd FileType gcss setlocal shiftwidth=2 tabstop=2
 
 let g:multi_cursor_use_default_mapping=0
