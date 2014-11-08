@@ -29,3 +29,5 @@
 	trustExitCode = true
 [push]
 	default = simple
+[pull]
+    default = simple
