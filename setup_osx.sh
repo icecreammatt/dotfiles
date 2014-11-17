@@ -59,6 +59,8 @@ echo "Updating brew..."
 # Update Brew in case it was already installed and not up to date
 brew update
 
+brew tap homebrew/dupes
+
 # Install basics
 binaries=(
     vim 
@@ -74,6 +76,8 @@ binaries=(
     go
     curl
     bash
+    rsync
+    jq
 )
 
 echo "Installing brew binaries"
