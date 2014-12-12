@@ -66,11 +66,9 @@ alias gll='git lg2'
 alias glu='git log --pretty=format:"%h%x09%an%x09%ad%x09%s" --author="icecreammatt@gmail.com" --reverse | cut -d " " -f 3-'
 #alias gll='git log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"'
 alias gb='git branch -a'
-alias gd='git diff'
-alias gdw='git diff -w'
-alias gdc='git diff --cached'
-alias gdcw='git diff --cached -w'
-alias gds='git diff --staged'
+alias gdw='git difftool -y --extcmd icdiff -w | less'
+alias gdc='git difftool -y --extcmd icdiff --cached | less'
+alias gdcw='git difftool -y --extcmd icdiff --cached -w | less'
 alias gcm='git checkout master'
 alias ga='git add'
 alias gc='git commit -m'
@@ -93,3 +91,13 @@ alias g4='grh;gf;grom;gsub;'
 
 # OSX
 alias flushdns='sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder;'
+
+unalias gd
+function gd() {
+    if icdiff 2>/dev/null; then
+        git icdiff | less
+    else
+        git diff
+    fi
+}
+
