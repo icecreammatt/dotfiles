@@ -36,20 +36,29 @@ then
     then
       _upgrade_dotfiles
     else
-      echo "[Dotfiles] Would you like to check for updates? [Y/n] \c"
-      read line
-        case "$line" in
-            (N|n)
-                _update_dotfiles_update
-            ;;
-            *)
-                _upgrade_dotfiles
-            ;;
-        esac
+
+      pushd $dotfiles 
+      git fetch --all
+      originMaster=$(git rev-parse origin/master);
+      localHead=$(git rev-parse head);
+      popd
+
+      if [ "$originMaster" != "$localHead" ]; then
+        echo "[Dotfiles] Would you like to check for updates?"
+        echo "Type Y to update dotfiles: \c"
+        read line
+        if [ "$line" = Y ] || [ "$line" = y ]; then
+          _upgrade_dotfiles
+        else
+          _update_dotfiles_update
+        fi
+      else
+        _update_dotfiles_update
+      fi
+
     fi
   fi
 else
   # create the dotfiles file
   _update_dotfiles_update
 fi
-
