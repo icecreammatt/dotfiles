@@ -36,6 +36,18 @@ else
     alias e='open . &'
 fi
 
+# Find all recursively with line numbers
+# ignores case and binary files
+function fa() {
+    grep -rniI $@ .
+}
+
+# Find all recursively with line numbers including context
+# ignores case and binary files
+function fac() {
+    grep -rniI -A 2 -B 2 $@ .
+}
+
 # Docker
 function devenv() {
     docker run -i --rm=false -v $(pwd):/home -t icecreammatt/devenv /bin/zsh
