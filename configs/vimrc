@@ -38,6 +38,9 @@ Plugin 'jelera/vim-javascript-syntax'
 " Vastly improved Javascript indentation and syntax support in Vim.
 Plugin 'pangloss/vim-javascript'
 
+" React JSX syntax highlighting and indenting for vim.
+Plugin 'mxw/vim-jsx'
+
 "EditorConfig plugin for Vim http://editorconfig.org
 Plugin 'editorconfig/editorconfig-vim'
 
