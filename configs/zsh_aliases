@@ -50,6 +50,13 @@ function fac() {
     grep --exclude-dir $EXCLUDED -rniI -A 2 -B 2 $@ .
 }
 
+# Find all recursively with line numbers including context
+# ignores case and binary files
+function facl() {
+    EXCLUDED="node_modules"
+    grep --exclude-dir $EXCLUDED -rniI -A 5 -B 5 $@ . --color=always | less
+}
+
 # Docker
 function devenv() {
     docker run -i --rm=false -v $(pwd):/home -t icecreammatt/devenv /bin/zsh
