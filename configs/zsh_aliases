@@ -39,13 +39,15 @@ fi
 # Find all recursively with line numbers
 # ignores case and binary files
 function fa() {
-    grep -rniI $@ .
+    EXCLUDED="node_modules"
+    grep --exclude-dir $EXCLUDED -rniI $@ .
 }
 
 # Find all recursively with line numbers including context
 # ignores case and binary files
 function fac() {
-    grep -rniI -A 2 -B 2 $@ .
+    EXCLUDED="node_modules"
+    grep --exclude-dir $EXCLUDED -rniI -A 2 -B 2 $@ .
 }
 
 # Docker
