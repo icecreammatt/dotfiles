@@ -166,6 +166,20 @@ Plugin 'Lokaltog/vim-easymotion'
 " NOTE: Requires extra compilation setup
 Plugin 'Valloric/YouCompleteMe'
 
+" UltiSnips - The ultimate snippet solution for Vim. Send pull requests to SirVer/ultisnips!
+Plugin 'sirver/ultisnips'
+
+Plugin 'honza/vim-snippets'
+
+let g:UltiSnipsExpandTrigger="<c-j>"
+"let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+"let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
+" If you want :UltiSnipsEdit to split your window.
+" let g:UltiSnipsEditSplit="vertical"
+
 "Go development plugin for Vim
 Plugin 'fatih/vim-go'
 
