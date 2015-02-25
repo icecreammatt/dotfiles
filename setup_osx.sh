@@ -78,6 +78,9 @@ binaries=(
     bash
     rsync
     jq
+    docker
+    s3cmd
+    tig
 )
 
 echo "Installing brew binaries"
@@ -91,6 +94,7 @@ brew install caskroom/cask/brew-cask
 
 apps=(
     grandperspective
+    vagrant
 )
 echo "Installing brew apps"
 brew cask install --appdir="/Applications" ${apps[@]}
@@ -108,6 +112,7 @@ nodepackages=(
     yo
     bower
     nws
+    browserify
 )
 
 echo "Installing node packages..."
