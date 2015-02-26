@@ -29,6 +29,9 @@ Plugin 'einars/js-beautify'
 " Vim syntax highlighting for Go templates.
 Plugin 'cespare/vim-go-templates'
 
+" mustache and handlebars mode for vim
+Plugin 'mustache/vim-mustache-handlebars'
+
 " filetype detection and syntax highlightnig for JSON in Vim
 Plugin 'helino/vim-json'
 
