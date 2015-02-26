@@ -58,6 +58,12 @@ Plugin 'Raimondi/delimitMate'
 " sublime text like control p
 Plugin 'kien/ctrlp.vim'
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|venv\|build\|deploy’'
+let g:ctrlp_user_command = {
+    \ 'types': {
+        \ 1: ['.git', 'cd %s && git ls-files'],
+        \ },
+    \ 'fallback': 'find %s -type f'
+    \ }
 
 " git diff marks in gutter
 Plugin 'airblade/vim-gitgutter'
