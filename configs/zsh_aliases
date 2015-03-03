@@ -43,6 +43,11 @@ function fa() {
     grep --exclude-dir $EXCLUDED -rniI $@ .
 }
 
+function fal() {
+    EXCLUDED="node_modules"
+    grep --exclude-dir $EXCLUDED -rniI $@ . --color=always | less
+}
+
 # Find all recursively with line numbers including context
 # ignores case and binary files
 function fac() {
