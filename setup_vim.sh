@@ -11,3 +11,6 @@ then
     source install.sh
     cd ~
 fi
+
+# Create directory for swapfiles to live
+mkdir $HOME/.vim/swapfiles

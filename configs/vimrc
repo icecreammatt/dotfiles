@@ -225,6 +225,7 @@ set backspace=indent,eol,start
 if $TMUX == ''
     set clipboard+=unnamed
 endif
+set directory=$HOME/.vim/swapfiles//
 
 "This unsets the "last search pattern" register by hitting return
 "nnoremap <esc> :noh<CR><esc>
