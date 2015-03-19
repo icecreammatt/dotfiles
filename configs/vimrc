@@ -256,6 +256,7 @@ imap jk <Esc>
 
 map <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>
 map <leader>b :NERDTreeToggle<CR>
+map <leader>f :NERDTreeFind<CR>
 map <leader>n :set number!<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 autocmd StdinReadPre * let s:std_in=1
