@@ -268,7 +268,7 @@ map <leader>k <Plug>(easymotion-k)
 map <leader>h <Plug>(easymotion-linebackward)
 
 nnoremap <space> <C-d>
-nnoremap <S-space> <C-u>
+nnoremap <leader><space> <C-u>
 
 " Use <leader>p to toggle between 'paste' and 'nopaste'
 nmap <leader>p :set paste!<CR>
