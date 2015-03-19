@@ -39,13 +39,18 @@ fi
 # Find all recursively with line numbers
 # ignores case and binary files
 function fa() {
-    EXCLUDED="node_modules"
-    grep --exclude-dir $EXCLUDED -rniI $@ .
+    #grep --exclude-dir={node_modules,dest} -rniI $@ .
+    git grep $@ 2>/dev/null
+    if [ $? -ne 0 ]; then
+        grep --exclude-dir={node_modules,dest} -rniI $@ . --color=always 2>/dev/null
+    fi
 }
 
 function fal() {
-    EXCLUDED="node_modules"
-    grep --exclude-dir $EXCLUDED -rniI $@ . --color=always | less
+    git grep $@ 2>/dev/null
+    if [ $? -ne 0 ]; then
+        grep --exclude-dir={node_modules,dest} -rniI $@ . --color=always 2>/dev/null | less 2>/dev/null
+    fi
 }
 
 # Find all recursively with line numbers including context
