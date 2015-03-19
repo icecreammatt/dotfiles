@@ -32,3 +32,5 @@
 	default = simple
 [pull]
     default = simple
+[grep]
+	lineNumber = true
