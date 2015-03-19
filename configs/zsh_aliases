@@ -36,6 +36,10 @@ else
     alias e='open . &'
 fi
 
+function v() {
+    vagrant ssh -c \"$@\"
+}
+
 # Find all recursively with line numbers
 # ignores case and binary files
 function fa() {
