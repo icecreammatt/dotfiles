@@ -85,6 +85,7 @@ Plugin 'tpope/vim-commentary'
 autocmd FileType python set commentstring=#\ %s
 autocmd FileType bash set commentstring=#\ %s
 autocmd FileType vim set commentstring=\"\ %s
+autocmd FileType javascript set commentstring=\/\/\ %s
 
 " capslock.vim: Software caps lock
 Plugin 'tpope/vim-capslock'
