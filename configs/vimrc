@@ -163,6 +163,9 @@ let g:syntastic_check_on_open=1
 Plugin 'scrooloose/nerdtree'
 let NERDTreeIgnore=['\.pyc$', '\.o$', '\~$', 'node_modules$']
 
+" A plugin of NERDTree showing git status
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+
 "Vim local themes for powerline
 Plugin 'zhaocai/linepower.vim'
 
