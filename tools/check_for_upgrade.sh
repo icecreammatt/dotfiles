@@ -38,7 +38,7 @@ then
     else
 
       pushd $dotfiles 
-      git fetch --all 2> /dev/null
+      git fetch --all &> /dev/null
       originMaster=$(git rev-parse origin/master);
       localHead=$(git rev-parse head);
       popd
