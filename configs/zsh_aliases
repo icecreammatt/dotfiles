@@ -40,6 +40,10 @@ function v() {
     vagrant ssh -c \"$@\"
 }
 
+function vjson() {
+    curl $1 | json | vless
+}
+
 # Find all recursively with line numbers
 # ignores case and binary files
 function fa() {
