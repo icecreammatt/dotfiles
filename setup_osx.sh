@@ -81,6 +81,7 @@ binaries=(
     docker
     s3cmd
     tig
+    openssl
 )
 
 echo "Installing brew binaries"
