@@ -204,6 +204,9 @@ Plugin 'fatih/vim-go'
 "Typescript syntax files for Vim
 Plugin 'leafgarland/typescript-vim'
 
+" Vim configuration for Rust.
+Plugin 'rust-lang/rust.vim'
+
 "True Sublime Text style multiple selections for Vim
 Plugin 'kristijanhusak/vim-multiple-cursors'
 
