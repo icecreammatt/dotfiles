@@ -97,9 +97,9 @@ get_space () {
 }
 
 _1LEFT="$_USERNAME $_PATH"
-_1RIGHT="$(bureau_git_prompt) [%*]"
 
 bureau_precmd () {
+  _1RIGHT="$(bureau_git_prompt) [%*]"
   _1SPACES=`get_space $_1LEFT $_1RIGHT`
   print 
   print -rP "$_1LEFT$_1SPACES$_1RIGHT"
