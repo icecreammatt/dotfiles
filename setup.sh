@@ -10,6 +10,8 @@ mkdir ~/bin 2> /dev/null
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 echo "Oh-My-Zsh Installed"
 
+ln -s ~/dotfiles/directories/oh-my-zsh-custom/themes ~/.oh-my-zsh/custom/themes
+
 # Setup dotfile
 . $HOME/dotfiles/setup_links.sh
 . $HOME/dotfiles/setup_scripts.sh
