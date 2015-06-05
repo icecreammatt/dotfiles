@@ -54,6 +54,9 @@ function vjson() {
     curl $1 | json | vless
 }
 
+f() { ag "$*" }
+
+
 # Find all recursively with line numbers
 # ignores case and binary files
 function fa() {
