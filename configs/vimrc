@@ -311,7 +311,7 @@ function! DistractionFreeWriting()
     set filetype=markdown
 endfunction
 
-map <F5> :setlocal spell! spelllang=en_us<CR>
+map <F6> :setlocal spell! spelllang=en_us<CR>
 
 autocmd FileType make setlocal noexpandtab
 autocmd FileType Javascript setlocal shiftwidth=2 tabstop=2
