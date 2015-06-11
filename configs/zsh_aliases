@@ -10,6 +10,7 @@ alias ealias='vim ~/.zsh_aliases'
 alias udot="$HOME/dotfiles/tools/upgrade.sh"
 
 # General
+alias m='make'
 alias tv='terminal_velocity ~/Dropbox/NotationalVelocity'
 alias hn='hn -c | less'
 alias vi="stty stop '' -ixoff; vim"
