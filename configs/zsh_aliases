@@ -28,6 +28,7 @@ alias pd='popd'
 alias md='mkdir'
 alias memory='ps -A u | sort -k 4 -r | head'
 alias diff="diff -u"
+alias todo="ag todo"
 
 if [[ $OSTYPE == "cygwin" ]]; then
     alias o='explorer . &'
@@ -56,6 +57,7 @@ function vjson() {
 }
 
 f() { ag "$*" }
+locate() { mdfind "kMDItemDisplayName == '*$@*'c" }
 
 
 # Find all recursively with line numbers
