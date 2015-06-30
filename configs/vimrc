@@ -91,6 +91,7 @@ autocmd FileType zsh set commentstring=#\ %s
 autocmd FileType Dockerfile set commentstring=#\ %s
 autocmd FileType vim set commentstring=\"\ %s
 autocmd FileType javascript set commentstring=\/\/\ %s
+autocmd FileType xml set commentstring=\<!--\ %s
 
 " capslock.vim: Software caps lock
 Plugin 'tpope/vim-capslock'
