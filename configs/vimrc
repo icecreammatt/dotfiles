@@ -244,6 +244,27 @@ set directory=$HOME/.vim/swapfiles//
 "nnoremap <esc> :noh<CR><esc>
 "nnoremap <esc> :noh<return><esc>
 
+ab heart ❤
+ab teh the
+ab [heart] ❤
+ab [cmd] ⌘
+ab [shift] ⇧
+ab [option] ⌥
+ab [opt] ⌥
+ab [ctrl] ⌃
+ab [tab] ⇥
+ab [section] §
+ab [lozenge] ◊
+ab [interpunct] ·
+ab [reference] ※
+ab [em]  
+ab [en]  
+ab [ellipse] …     
+ab [bar] ―
+ab [la] ←
+ab [ra] →
+ab [pi] π
+
 " Allows tab to indent and switch between tabs
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
