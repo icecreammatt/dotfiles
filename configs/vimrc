@@ -61,6 +61,9 @@ Plugin 'mxw/vim-jsx'
 "EditorConfig plugin for Vim http://editorconfig.org
 Plugin 'editorconfig/editorconfig-vim'
 
+" Vim plugin that displays tags in a window, ordered by scope
+Plugin 'majutsushi/tagbar'
+
 " A Vim plugin for visually displaying indent levels in code
 " Plugin 'nathanaelkane/vim-indent-guides'
 " hi IndentGuidesOdd  ctermbg=black
@@ -365,6 +368,7 @@ function! DistractionFreeWriting()
 endfunction
 
 map <F6> :setlocal spell! spelllang=en_us<CR>
+nmap <F8> :TagbarToggle<CR>
 
 autocmd FileType make setlocal noexpandtab
 autocmd FileType Javascript setlocal shiftwidth=2 tabstop=2
