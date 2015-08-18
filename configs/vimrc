@@ -108,7 +108,7 @@ autocmd FileType javascript set commentstring=\/\/\ %s
 autocmd FileType xml set commentstring=\<!--\ %s
 
 " capslock.vim: Software caps lock
-Plugin 'tpope/vim-capslock'
+" Plugin 'tpope/vim-capslock'
 
 " repeat.vim: enable repeating supported plugin maps with .
 Plugin 'tpope/vim-repeat'
@@ -217,7 +217,7 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 Plugin 'leafgarland/typescript-vim'
 
 " Vim configuration for Rust.
-Plugin 'rust-lang/rust.vim'
+" Plugin 'rust-lang/rust.vim'
 
 "True Sublime Text style multiple selections for Vim
 Plugin 'kristijanhusak/vim-multiple-cursors'
