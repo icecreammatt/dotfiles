@@ -40,6 +40,9 @@ Plugin 'maksimr/vim-jsbeautify'
 " Beautifier for javascript
 Plugin 'einars/js-beautify'
 
+" List of JavaScript ES6 snippets and syntax highlighting for vim. 
+Plugin 'isRuslan/vim-es6'
+
 " Vim syntax highlighting for Go templates.
 " Plugin 'cespare/vim-go-templates'
 
