@@ -11,6 +11,17 @@ call vundle#begin()
 " required! 
 Plugin 'gmarik/vundle'
 
+"Go development plugin for Vim
+Plugin 'fatih/vim-go'
+let $GOPATH = "/Users/matt/go"
+"setlocal omnifunc=go#complete#Complete
+"verbose setlocal omnifunc?
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+
 "  Base16 for Vim https://github.com/chriskempson/base16
 Plugin 'chriskempson/base16-vim'
 
@@ -30,7 +41,7 @@ Plugin 'maksimr/vim-jsbeautify'
 Plugin 'einars/js-beautify'
 
 " Vim syntax highlighting for Go templates.
-Plugin 'cespare/vim-go-templates'
+" Plugin 'cespare/vim-go-templates'
 
 " mustache and handlebars mode for vim
 Plugin 'mustache/vim-mustache-handlebars'
@@ -202,9 +213,6 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 " If you want :UltiSnipsEdit to split your window.
 " let g:UltiSnipsEditSplit="vertical"
 
-"Go development plugin for Vim
-Plugin 'fatih/vim-go'
-
 "Typescript syntax files for Vim
 Plugin 'leafgarland/typescript-vim'
 
@@ -216,7 +224,7 @@ Plugin 'kristijanhusak/vim-multiple-cursors'
 
 call vundle#end()
 filetype on
-"filetype plugin indent on
+filetype plugin indent on
 
 """"""" END PLUGINS
 
@@ -312,6 +320,23 @@ nnoremap <leader><space> <C-u>
 
 " Use <leader>p to toggle between 'paste' and 'nopaste'
 nmap <leader>p :set paste!<CR>
+
+au FileType go nmap <Leader>ds <Plug>(go-def-split)
+au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
+au FileType go nmap <Leader>dt <Plug>(go-def-tab)
+
+au FileType go nmap <leader>r <Plug>(go-run)
+"au FileType go nmap <leader>b <Plug>(go-build)
+au FileType go nmap <leader>t <Plug>(go-test)
+"au FileType go nmap <leader>c <Plug>(go-coverage)
+
+au FileType go nmap <Leader>gd <Plug>(go-doc)
+au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
+au FileType go nmap <Leader>gb <Plug>(go-doc-browser)
+
+au FileType go nmap <Leader>i <Plug>(go-info)
+
+au FileType go nmap <Leader>e <Plug>(go-rename)
 
 let g:EasyMotion_startofline = 0 " keep cursor column when JK motion
 
