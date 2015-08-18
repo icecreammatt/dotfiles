@@ -10,6 +10,10 @@ EDITOR=vim;
 # See ~/dotfiles/directories/oh-my-zsh/custom/themes for the override
 ZSH_THEME="bureau"
 
+# Base16 Shell
+BASE16_SHELL="$HOME/.config/base16-shell/base16-eighties.dark.sh"
+[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+
 # Uncomment following line if you want to disable autosetting terminal title.
 # DISABLE_AUTO_TITLE="true"
 

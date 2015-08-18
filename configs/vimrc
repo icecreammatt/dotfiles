@@ -11,6 +11,9 @@ call vundle#begin()
 " required! 
 Plugin 'gmarik/vundle'
 
+"  Base16 for Vim https://github.com/chriskempson/base16
+Plugin 'chriskempson/base16-vim'
+
 " Simulating a vaguely WriteRoom-like environment in Vim. 
 Plugin 'https://github.com/mikewest/vimroom'
 
@@ -219,13 +222,15 @@ filetype on
 
 let mapleader = ","
 
-set t_Co=256
+" set t_Co=256
 syntax on
 set background=dark
 
 set ignorecase
 syntax on
-color molokai
+" color molokai
+colorscheme base16-eighties
+
 set hlsearch
 
 set ts=4
