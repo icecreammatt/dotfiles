@@ -253,6 +253,7 @@ highlight! link MatchParen StatusLine
 "hi CursorLine   cterm=reverse "keeping this one just for reference
 hi CursorLine   cterm=NONE
 hi CursorLineNr cterm=NONE ctermfg=darkblue ctermbg=black
+hi Search cterm=NONE ctermfg=black ctermbg=blue
 " === End Base16 Settings ===
 
 set ignorecase
