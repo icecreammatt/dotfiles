@@ -12,6 +12,9 @@ echo "Oh-My-Zsh Installed"
 
 ln -s ~/dotfiles/directories/oh-my-zsh-custom/themes ~/.oh-my-zsh/custom/themes
 
+# Install base16 shell theme
+git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
+
 # Setup dotfile
 . $HOME/dotfiles/setup_links.sh
 . $HOME/dotfiles/setup_scripts.sh
