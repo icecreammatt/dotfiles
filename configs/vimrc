@@ -1,17 +1,39 @@
+" Modeline and Notes {
+" vim: set foldmarker={,} foldlevel=0 foldmethod=marker spell:
+"
+" Vim folding commands
+" zf#j creates a fold from the cursor down # lines.
+" zf/string creates a fold from the cursor to string .
+" zj moves the cursor to the next fold.
+" zk moves the cursor to the previous fold.
+" zo opens a fold at the cursor.
+" zO opens all folds at the cursor.
+" zm increases the foldlevel by one.
+" zM closes all open folds.
+" zr decreases the foldlevel by one.
+" zR decreases the foldlevel to zero -- all folds will be open.
+" zd deletes the fold at the cursor.
+" zE deletes all folds.
+" [z move to start of open fold.
+" ]z move to end of open fold.
+
+"}
+
+" Plugins {
 set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" iA Writer vim colorscheme
-" Plugin 'https://github.com/jacekd/vim-iawriter'
-
 " let Vundle manage Vundle
 " required! 
 Plugin 'gmarik/vundle'
 
-"Go development plugin for Vim
+" iA Writer vim colorscheme
+" Plugin 'https://github.com/jacekd/vim-iawriter'
+
+"{ Go development plugin for Vim
 Plugin 'fatih/vim-go'
 let $GOPATH = "/Users/matt/go"
 "setlocal omnifunc=go#complete#Complete
@@ -21,6 +43,7 @@ let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
+"}
 
 "  Base16 for Vim https://github.com/chriskempson/base16
 Plugin 'chriskempson/base16-vim'
@@ -103,7 +126,7 @@ Plugin 'tpope/vim-markdown'
 " surround.vim: quoting/parenthesizing made simple
 Plugin 'tpope/vim-surround'
 
-" commentary.vim: comment stuff out
+"{ commentary.vim: comment stuff out
 Plugin 'tpope/vim-commentary'
 autocmd FileType python set commentstring=#\ %s
 autocmd FileType bash set commentstring=#\ %s
@@ -115,6 +138,7 @@ autocmd FileType Dockerfile set commentstring=#\ %s
 autocmd FileType vim set commentstring=\"\ %s
 autocmd FileType javascript set commentstring=\/\/\ %s
 autocmd FileType xml set commentstring=\<!--\ %s
+"}
 
 " capslock.vim: Software caps lock
 " Plugin 'tpope/vim-capslock'
@@ -125,7 +149,8 @@ Plugin 'tpope/vim-repeat'
 " fugitive.vim: a Git wrapper so awesome, it should be illegal
 Plugin 'tpope/vim-fugitive'
 
-"lean & mean status/tabline for vim that's light as air"
+
+"{ lean & mean status/tabline for vim that's light as air"
 Plugin 'bling/vim-airline'
 let g:airline_powerline_fonts = 1
 "let g:airline_theme='powerlineish'
@@ -157,6 +182,7 @@ let g:airline#extensions#tabline#buffer_min_count = 3
 " Remove > and < style
 let g:airline_left_sep = '' 
 let g:airline_right_sep = ''
+"}
 
 " Simple tmux statusline generator with support for powerline symbols and
 " airline integration"
@@ -174,7 +200,7 @@ Plugin 'digitaltoad/vim-jade'
 " Vim syntax for TOML
 Plugin 'cespare/vim-toml'
 
-" Syntax checking hacks for vim
+"{ Syntax checking hacks for vim
 Plugin 'scrooloose/syntastic'
 let g:syntastic_javascript_checkers = ['jshint', 'jscs']
 let g:syntastic_error_symbol = '✗'
@@ -186,11 +212,11 @@ let g:syntastic_warning_symbol='⚠'
 " " You might not want this, so just leave it out if you don't.
 let g:syntastic_check_on_open=1
 " http://oli.me.uk/2013/06/29/equipping-vim-for-javascript/
-"
+"}
 
 "A tree explorer plugin for vim.
 Plugin 'scrooloose/nerdtree'
-let NERDTreeIgnore=['\.pyc$', '\.o$', '\~$', 'node_modules$']
+let NERDTreeIgnore=['\.pyc$', '\.o$', '\~$', 'node_modules$', 'build$']
 
 " A plugin of NERDTree showing git status
 Plugin 'Xuyuanp/nerdtree-git-plugin'
@@ -234,11 +260,9 @@ Plugin 'kristijanhusak/vim-multiple-cursors'
 call vundle#end()
 filetype on
 filetype plugin indent on
+" }
 
-""""""" END PLUGINS
-
-let mapleader = ","
-
+"{ Theme settings
 syntax on
 set background=dark
 
@@ -255,7 +279,9 @@ hi CursorLine   cterm=NONE
 hi CursorLineNr cterm=NONE ctermfg=darkblue ctermbg=black
 hi Search cterm=NONE ctermfg=black ctermbg=blue
 " === End Base16 Settings ===
+"}
 
+"{ General settings
 set ignorecase
 set hlsearch
 
@@ -271,11 +297,9 @@ if $TMUX == ''
     set clipboard+=unnamed
 endif
 set directory=$HOME/.vim/swapfiles//
+"}
 
-"This unsets the "last search pattern" register by hitting return
-"nnoremap <esc> :noh<CR><esc>
-"nnoremap <esc> :noh<return><esc>
-
+"{ Abbreviations
 ab heart ❤
 ab teh the
 ab [heart] ❤
@@ -296,6 +320,20 @@ ab [bar] ―
 ab [la] ←
 ab [ra] →
 ab [pi] π
+"}
+
+"{ Key remapping
+
+let mapleader = ","
+
+" Markdown preview
+nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr> :redraw!<cr>
+
+nnoremap gb <C-o>
+
+"This unsets the "last search pattern" register by hitting return
+"nnoremap <esc> :noh<CR><esc>
+"nnoremap <esc> :noh<return><esc>
 
 " Allows tab to indent and switch between tabs
 vnoremap <Tab> >gv
@@ -314,32 +352,40 @@ noremap <DOWN> <NOP>
 noremap <LEFT> <NOP>
 noremap <RIGHT> <NOP>
 
-imap jk <Esc>
-
-map <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>
-map <leader>b :NERDTreeToggle<CR>
-map <leader>f :NERDTreeFind<CR>
-map <leader>n :set number!<CR>
-map <leader>e :s/&/\r&/g<CR>
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+nnoremap <space> <C-d>
+nnoremap <leader><space> <C-u>
 
 noremap <c-s> :w<CR>
 imap <c-s> <Esc>:w<CR>a
 imap <c-s> <Esc><c-s>
+
+imap jk <Esc>
 
 map <leader>l <Plug>(easymotion-lineforward)
 map <leader>j <Plug>(easymotion-j)
 map <leader>k <Plug>(easymotion-k)
 map <leader>h <Plug>(easymotion-linebackward)
 
-nnoremap <space> <C-d>
-nnoremap <leader><space> <C-u>
-
 " Use <leader>p to toggle between 'paste' and 'nopaste'
 nmap <leader>p :set paste!<CR>
 
+map <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>
+map <leader>b :NERDTreeToggle<CR>
+map <leader>f :NERDTreeFind<CR>
+map <leader>n :set number!<CR>
+map <leader>e :s/&/\r&/g<CR>
+
+map <F6> :setlocal spell! spelllang=en_us<CR>
+nmap <F8> :TagbarToggle<CR>
+"}
+
+"{ NERDTree Settings
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+"}
+
+"{ FileType mappings
 au FileType go nmap <Leader>ds <Plug>(go-def-split)
 au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
 au FileType go nmap <Leader>dt <Plug>(go-def-tab)
@@ -357,19 +403,21 @@ au FileType go nmap <Leader>i <Plug>(go-info)
 
 au FileType go nmap <Leader>e <Plug>(go-rename)
 
-let g:EasyMotion_startofline = 0 " keep cursor column when JK motion
+autocmd FileType make setlocal noexpandtab
+autocmd FileType Javascript setlocal shiftwidth=2 tabstop=2
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
+autocmd FileType gcss setlocal shiftwidth=2 tabstop=2
+"}
 
+"{ Easymotion
+let g:EasyMotion_startofline = 0 " keep cursor column when JK motion
 map / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
-
 map n <Plug>(easymotion-next)
 map N <Plug>(easymotion-prev)
+"}
 
-" Markdown preview
-nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr> :redraw!<cr>
-
-nnoremap gb <C-o>
-
+"{ Distraction free mode
 " turn-on distraction free writing mode for markdown files
 au BufNewFile,BufRead *.{txt,md,mdown,mkd,mkdn,markdown,mdwn,apib} call DistractionFreeWriting()
 function! DistractionFreeWriting()
@@ -382,23 +430,18 @@ function! DistractionFreeWriting()
     set nonumber                       " hide line numbers
     set filetype=markdown
 endfunction
+"}
 
-map <F6> :setlocal spell! spelllang=en_us<CR>
-nmap <F8> :TagbarToggle<CR>
-
-autocmd FileType make setlocal noexpandtab
-autocmd FileType Javascript setlocal shiftwidth=2 tabstop=2
-autocmd FileType html setlocal shiftwidth=2 tabstop=2
-autocmd FileType gcss setlocal shiftwidth=2 tabstop=2
-
+"{ Multi cursor settings
 let g:multi_cursor_use_default_mapping=0
 let g:multi_cursor_start_key='<leader>c'
 let g:multi_cursor_next_key='<C-n>'
 let g:multi_cursor_prev_key='<C-p>'
 let g:multi_cursor_skip_key='<C-x>'
 let g:multi_cursor_quit_key='<Esc>'
+"}
 
-" Jump to the last position of the cursor except for git commits
+"{ Jump to the last position of the cursor except for git commits
 function! PositionCursorFromViminfo()
     if !(bufname("%") =~ '\(COMMIT_EDITMSG\)') && line("'\"") > 1 && line("'\"") <= line("$")
         exe "normal! g`\""
@@ -408,3 +451,4 @@ au BufReadPost * call PositionCursorFromViminfo()
  
 " Jump to the last position of the cursor
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+"}
