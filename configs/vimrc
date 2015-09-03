@@ -278,10 +278,22 @@ highlight! link MatchParen StatusLine
 hi CursorLine   cterm=NONE
 hi CursorLineNr cterm=NONE ctermfg=darkblue ctermbg=black
 hi Search cterm=NONE ctermfg=black ctermbg=blue
+
+set cursorline
+" autocmd InsertEnter * highlight CursorLine guifg=white guibg=blue ctermfg=white ctermbg=blue
+" autocmd InsertLeave * highlight CursorLine guifg=white guibg=darkblue ctermfg=white ctermbg=darkblue
+
+" :autocmd InsertEnter * set cul
+" :autocmd InsertLeave * set nocul
+
+:autocmd InsertEnter,InsertLeave * set cul!
 " === End Base16 Settings ===
 "}
 
 "{ General settings
+set listchars=tab:▸\ ,eol:¬
+set list " View whitespace
+
 set ignorecase
 set hlsearch
 
@@ -289,7 +301,6 @@ set ts=4
 set expandtab
 set shiftwidth=4
 set autoindent
-set cursorline
 
 set number
 set backspace=indent,eol,start
@@ -451,4 +462,19 @@ au BufReadPost * call PositionCursorFromViminfo()
  
 " Jump to the last position of the cursor
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+"}
+
+"{ Open URL under cursor in browser
+function! WebView()
+    "let url = expand("<cword>")
+    let url=matchstr(@0, '[a-zA-Z0-9-\.]*:\/\/[^ >,;]*')
+    let path="/Applications/Firefox.app"
+    if url != ""
+        silent exec "!open -a ".path." '".url."'" | redraw!
+    "exec 'silent !"' open . url
+    else
+        echo "No URL under cursor."
+    endif
+endfun
+nnoremap <leader>o :call WebView()<CR>
 "}
