@@ -43,8 +43,7 @@ then
       popd
 
       if [ "$originMaster" != "$localHead" ]; then
-        echo "[Dotfiles] Would you like to check for updates?"
-        echo "Type Y to update dotfiles: \c"
+        echo "[Dotfiles] Would you like to check for updates? [Y/n] \c"
         read line
         case "$line" in
             (N|n)
