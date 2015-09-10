@@ -418,6 +418,7 @@ autocmd FileType make setlocal noexpandtab
 autocmd FileType Javascript setlocal shiftwidth=2 tabstop=2
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
 autocmd FileType gcss setlocal shiftwidth=2 tabstop=2
+autocmd FileType go set nolist
 "}
 
 "{ Easymotion
