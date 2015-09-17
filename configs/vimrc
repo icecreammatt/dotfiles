@@ -20,21 +20,17 @@
 "}
 
 " Plugins {
-set nocompatible
-filetype off
-
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 
 " let Vundle manage Vundle
 " required! 
-Plugin 'gmarik/vundle'
+Plug 'gmarik/vundle'
 
 " iA Writer vim colorscheme
-" Plugin 'https://github.com/jacekd/vim-iawriter'
+" Plug 'https://github.com/jacekd/vim-iawriter'
 
 "{ Go development plugin for Vim
-Plugin 'fatih/vim-go'
+Plug 'fatih/vim-go'
 let $GOPATH = "/Users/matt/go"
 "setlocal omnifunc=go#complete#Complete
 "verbose setlocal omnifunc?
@@ -46,55 +42,55 @@ let g:go_highlight_build_constraints = 1
 "}
 
 "  Base16 for Vim https://github.com/chriskempson/base16
-Plugin 'chriskempson/base16-vim'
+Plug 'chriskempson/base16-vim'
 
 " Molokai color scheme for Vim
-Plugin 'tomasr/molokai'
+Plug 'tomasr/molokai'
 
 " Simulating a vaguely WriteRoom-like environment in Vim. 
-Plugin 'https://github.com/mikewest/vimroom'
+Plug 'https://github.com/mikewest/vimroom'
 
 " vim syntax for LESS (dynamic CSS)
-Plugin 'groenewege/vim-less'
+Plug 'groenewege/vim-less'
 
 " Vim syntax highlighting for GCSS
-Plugin 'yosssi/vim-gcss'
+Plug 'yosssi/vim-gcss'
 
 " vim plugin which formated javascript files by js-beautify
-Plugin 'maksimr/vim-jsbeautify'
+Plug 'maksimr/vim-jsbeautify'
 
 " Beautifier for javascript
-Plugin 'einars/js-beautify'
+Plug 'einars/js-beautify'
 
 " List of JavaScript ES6 snippets and syntax highlighting for vim. 
-Plugin 'isRuslan/vim-es6'
+Plug 'isRuslan/vim-es6'
 
 " Vim syntax highlighting for Go templates.
-" Plugin 'cespare/vim-go-templates'
+" Plug 'cespare/vim-go-templates'
 
 " mustache and handlebars mode for vim
-Plugin 'mustache/vim-mustache-handlebars'
+Plug 'mustache/vim-mustache-handlebars'
 
 " filetype detection and syntax highlightnig for JSON in Vim
-Plugin 'helino/vim-json'
+Plug 'helino/vim-json'
 
 " javascript syntax
-Plugin 'jelera/vim-javascript-syntax'
+Plug 'jelera/vim-javascript-syntax'
 
 " Vastly improved Javascript indentation and syntax support in Vim.
-Plugin 'pangloss/vim-javascript'
+Plug 'pangloss/vim-javascript'
 
 " React JSX syntax highlighting and indenting for vim.
-Plugin 'mxw/vim-jsx'
+Plug 'mxw/vim-jsx'
 
 "EditorConfig plugin for Vim http://editorconfig.org
-Plugin 'editorconfig/editorconfig-vim'
+Plug 'editorconfig/editorconfig-vim'
 
 " Vim plugin that displays tags in a window, ordered by scope
-Plugin 'majutsushi/tagbar'
+Plug 'majutsushi/tagbar'
 
 " A Vim plugin for visually displaying indent levels in code
-" Plugin 'nathanaelkane/vim-indent-guides'
+" Plug 'nathanaelkane/vim-indent-guides'
 " hi IndentGuidesOdd  ctermbg=black
 " hi indentguideseven ctermbg=darkgrey
 " let g:indent_guides_start_level = 2
@@ -102,10 +98,10 @@ Plugin 'majutsushi/tagbar'
 
 " Vim plugin, provides insert mode auto-completion for quotes, parens,
 "brackets, etc.
-Plugin 'Raimondi/delimitMate'
+Plug 'Raimondi/delimitMate'
 
 " sublime text like control p
-Plugin 'kien/ctrlp.vim'
+Plug 'kien/ctrlp.vim'
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|venv\|build\|deploy'
 let g:ctrlp_user_command = {
     \ 'types': {
@@ -115,19 +111,19 @@ let g:ctrlp_user_command = {
     \ }
 
 " git diff marks in gutter
-Plugin 'airblade/vim-gitgutter'
+Plug 'airblade/vim-gitgutter'
 
 " syntax highlighting"
-Plugin 'othree/javascript-libraries-syntax.vim'
+Plug 'othree/javascript-libraries-syntax.vim'
 
 " Vim Markdown runtime files
-Plugin 'tpope/vim-markdown'
+Plug 'tpope/vim-markdown'
 
 " surround.vim: quoting/parenthesizing made simple
-Plugin 'tpope/vim-surround'
+Plug 'tpope/vim-surround'
 
 "{ commentary.vim: comment stuff out
-Plugin 'tpope/vim-commentary'
+Plug 'tpope/vim-commentary'
 autocmd FileType python set commentstring=#\ %s
 autocmd FileType bash set commentstring=#\ %s
 autocmd FileType sh set commentstring=#\ %s
@@ -141,17 +137,17 @@ autocmd FileType xml set commentstring=\<!--\ %s
 "}
 
 " capslock.vim: Software caps lock
-" Plugin 'tpope/vim-capslock'
+" Plug 'tpope/vim-capslock'
 
 " repeat.vim: enable repeating supported plugin maps with .
-Plugin 'tpope/vim-repeat'
+Plug 'tpope/vim-repeat'
 
 " fugitive.vim: a Git wrapper so awesome, it should be illegal
-Plugin 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 
 
 "{ lean & mean status/tabline for vim that's light as air"
-Plugin 'bling/vim-airline'
+Plug 'bling/vim-airline'
 let g:airline_powerline_fonts = 1
 "let g:airline_theme='powerlineish'
 let g:airline_theme='zenburn'
@@ -186,22 +182,22 @@ let g:airline_right_sep = ''
 
 " Simple tmux statusline generator with support for powerline symbols and
 " airline integration"
-Plugin 'edkolev/tmuxline.vim'
+Plug 'edkolev/tmuxline.vim'
 
 " Syntax Highlighting for Stylus
-Plugin 'wavded/vim-stylus'
+Plug 'wavded/vim-stylus'
 
 " Vim Jade template engine syntax highlighting and indention
-Plugin 'digitaltoad/vim-jade'
+Plug 'digitaltoad/vim-jade'
 
 " Vim support for Rust file detection and syntax highlighting.
-" Plugin 'wting/rust.vim'
+" Plug 'wting/rust.vim'
 
 " Vim syntax for TOML
-Plugin 'cespare/vim-toml'
+Plug 'cespare/vim-toml'
 
 "{ Syntax checking hacks for vim
-Plugin 'scrooloose/syntastic'
+Plug 'scrooloose/syntastic'
 let g:syntastic_javascript_checkers = ['jshint', 'jscs']
 let g:syntastic_error_symbol = '✗'
 let g:syntastic_warning_symbol='⚠'
@@ -215,29 +211,29 @@ let g:syntastic_check_on_open=1
 "}
 
 "A tree explorer plugin for vim.
-Plugin 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree'
 let NERDTreeIgnore=['\.pyc$', '\.o$', '\~$', 'node_modules$', 'build$']
 
 " A plugin of NERDTree showing git status
-Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 "Vim local themes for powerline
-Plugin 'zhaocai/linepower.vim'
+Plug 'zhaocai/linepower.vim'
 
 "Seamless navigation between tmux panes and vim splits
-Plugin 'christoomey/vim-tmux-navigator'
+Plug 'christoomey/vim-tmux-navigator'
 
 "Vim motions on speed!
-Plugin 'Lokaltog/vim-easymotion'
+Plug 'Lokaltog/vim-easymotion'
 
 " code autocompletion
 " NOTE: Requires extra compilation setup
-Plugin 'Valloric/YouCompleteMe'
+Plug 'Valloric/YouCompleteMe'
 
 " UltiSnips - The ultimate snippet solution for Vim. Send pull requests to SirVer/ultisnips!
-Plugin 'sirver/ultisnips'
+Plug 'sirver/ultisnips'
 
-Plugin 'honza/vim-snippets'
+Plug 'honza/vim-snippets'
 
 let g:UltiSnipsExpandTrigger="<c-j>"
 "let g:UltiSnipsJumpForwardTrigger="<c-b>"
@@ -249,15 +245,16 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 " let g:UltiSnipsEditSplit="vertical"
 
 "Typescript syntax files for Vim
-Plugin 'leafgarland/typescript-vim'
+Plug 'leafgarland/typescript-vim'
 
 " Vim configuration for Rust.
-" Plugin 'rust-lang/rust.vim'
+" Plug 'rust-lang/rust.vim'
 
 "True Sublime Text style multiple selections for Vim
-Plugin 'kristijanhusak/vim-multiple-cursors'
+Plug 'kristijanhusak/vim-multiple-cursors'
 
-call vundle#end()
+call plug#end()
+
 filetype on
 filetype plugin indent on
 " }
@@ -409,9 +406,7 @@ au FileType go nmap <leader>t <Plug>(go-test)
 au FileType go nmap <Leader>gd <Plug>(go-doc)
 au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
 au FileType go nmap <Leader>gb <Plug>(go-doc-browser)
-
 au FileType go nmap <Leader>i <Plug>(go-info)
-
 au FileType go nmap <Leader>e <Plug>(go-rename)
 
 autocmd FileType make setlocal noexpandtab
