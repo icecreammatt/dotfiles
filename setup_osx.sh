@@ -82,6 +82,7 @@ binaries=(
     s3cmd
     tig
     openssl
+    ssh-copy-id
 )
 
 echo "Installing brew binaries"
