@@ -3,3 +3,5 @@
 .netrwhist
 *.swp
 directories/vim/bundle/*
+directories/vim/autoload/
+directories/vim/plugged/
