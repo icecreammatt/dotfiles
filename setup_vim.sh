@@ -1,15 +1,17 @@
 #!/bin/bash
-mkdir -p ~/.vim/bundle
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Create directory for swapfiles to live
 mkdir $HOME/.vim/swapfiles
 
-vim +PluginInstall +qall
+vim +PlugInstall
 
-if [ -d ~/.vim/bundle/YouCompleteMe/ ]
+YCM_PLUGIN=~/.vim/plugged/YouCompleteMe/
+
+if [ -d $YCM_PLUGIN ]
 then
-    cd ~/.vim/bundle/YouCompleteMe/
+    cd $YCM_PLUGIN
     source install.sh
     cd ~
 fi
