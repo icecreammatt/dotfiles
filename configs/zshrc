@@ -26,7 +26,7 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-source $HOME/bin/k
+[ -f ~/bin/k ] && source ~/bin/k
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 GOPATH=$HOME/go
