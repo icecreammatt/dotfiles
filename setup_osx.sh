@@ -83,6 +83,7 @@ binaries=(
     tig
     openssl
     ssh-copy-id
+    coreutils
 )
 
 echo "Installing brew binaries"
