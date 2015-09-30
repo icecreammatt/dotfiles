@@ -84,6 +84,7 @@ binaries=(
     openssl
     ssh-copy-id
     coreutils
+    fzf
 )
 
 echo "Installing brew binaries"

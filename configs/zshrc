@@ -27,6 +27,7 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/bin/k
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 GOPATH=$HOME/go
 GOBIN=$HOME/go/bin

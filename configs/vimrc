@@ -145,6 +145,8 @@ Plug 'tpope/vim-repeat'
 " fugitive.vim: a Git wrapper so awesome, it should be illegal
 Plug 'tpope/vim-fugitive'
 
+" A command-line fuzzy finder written in Go 
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 
 "{ lean & mean status/tabline for vim that's light as air"
 Plug 'bling/vim-airline'
