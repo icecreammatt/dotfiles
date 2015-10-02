@@ -25,7 +25,7 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
+[ -f $ZSH/oh-my-zsh.sh ] && source $ZSH/oh-my-zsh.sh
 [ -f ~/bin/k ] && source ~/bin/k
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
