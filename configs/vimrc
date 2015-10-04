@@ -214,7 +214,7 @@ let g:syntastic_check_on_open=1
 
 "A tree explorer plugin for vim.
 Plug 'scrooloose/nerdtree'
-let NERDTreeIgnore=['\.pyc$', '\.o$', '\~$', 'node_modules$', 'build$']
+let NERDTreeIgnore=['\.pyc$', '\.o$', '\~$', 'node_modules$', 'build$', '\.git', '\.svn']
 
 " A plugin of NERDTree showing git status
 Plug 'Xuyuanp/nerdtree-git-plugin'
