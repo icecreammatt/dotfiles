@@ -116,7 +116,8 @@ alias dp='docker ps'
 
 # Git
 
-iii() { git commit -m "$*" }
+unalias gg
+gg() { git commit -m "$*" }
 alias g='git status -s'
 alias gs='git show'
 alias gf='git fetch --all'
