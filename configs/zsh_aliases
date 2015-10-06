@@ -155,6 +155,9 @@ alias gmt='git mergetool'
 alias ggg='gf;grom;gsub;'
 alias g4='grh;gf;grom;gsub;'
 
+# Tig
+alias t='tig status'
+
 # OSX
 alias flushdns='sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder;'
 
