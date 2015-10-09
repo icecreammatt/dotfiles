@@ -56,6 +56,9 @@ Plug 'groenewege/vim-less'
 " Vim syntax highlighting for GCSS
 Plug 'yosssi/vim-gcss'
 
+" Write CSS faster http://ricostacruz.com/vim-hyperstyle/
+" Plug 'rstacruz/vim-hyperstyle'
+
 " vim plugin which formated javascript files by js-beautify
 Plug 'maksimr/vim-jsbeautify'
 
