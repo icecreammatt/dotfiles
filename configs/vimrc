@@ -298,6 +298,7 @@ set list " View whitespace
 
 set ignorecase
 set hlsearch
+set incsearch
 
 set ts=4
 set expandtab
