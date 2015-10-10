@@ -38,15 +38,8 @@ ruby="$HOME/.rbenv/shims"
 export PATH=$HOME/bin:$ruby:$generalPath:$GOPATH:$GOBIN:$windowsPath
 export ANSIBLE_HOSTS=$HOME/ansible/hosts
 
-# My older simple prompt used with terminal_party
-# Maybe switching back if the new lines in bureau annoy me
-#PROMPT='%{$fg_bold[green]%}%{$fg[white]%}%{$reset_color%} '
-
 [ -e "${HOME}/.zsh_aliases" ] && source "${HOME}/.zsh_aliases"
 [ -e "${HOME}/.zshrc_local" ] && source "${HOME}/.zshrc_local"
-
-# RPROMPT=$'$(git_super_status)'
-# PROMPT=$'%{$fg_bold[white]%}%M %{$fg_bold[red]%}➜ %{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}%{$fg_bold[blue]%} % %{$reset_color%}'
 
 # Dotfiles update
 source ~/dotfiles/tools/check_for_upgrade.sh
