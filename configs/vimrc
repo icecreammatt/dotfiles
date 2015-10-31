@@ -105,13 +105,14 @@ Plug 'Raimondi/delimitMate'
 
 " sublime text like control p
 Plug 'kien/ctrlp.vim'
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|venv\|build\|deploy'
-let g:ctrlp_user_command = {
-    \ 'types': {
-        \ 1: ['.git', 'cd %s && git ls-files'],
-        \ },
-    \ 'fallback': 'find %s -type f'
-    \ }
+" let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|venv\|build\|deploy'
+let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+" let g:ctrlp_user_command = {
+"     \ 'types': {
+"         \ 1: ['.git', 'cd %s && git ls-files'],
+"         \ },
+"     \ 'fallback': 'find %s -type f'
+"     \ }
 
 " git diff marks in gutter
 Plug 'airblade/vim-gitgutter'
