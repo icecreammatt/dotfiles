@@ -31,7 +31,7 @@ Plug 'gmarik/vundle'
 
 "{ Go development plugin for Vim
 Plug 'fatih/vim-go'
-let $GOPATH = "/Users/matt/go"
+let $GOPATH = $HOME."/go"
 "setlocal omnifunc=go#complete#Complete
 "verbose setlocal omnifunc?
 let g:go_highlight_functions = 1
