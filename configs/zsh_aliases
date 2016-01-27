@@ -91,6 +91,10 @@ function facl() {
     grep --exclude-dir $EXCLUDED -rniI -A 5 -B 5 $@ . --color=always | less
 }
 
+# Node
+alias npmi='npm install'
+alias npmig='npm install -g'
+
 # Docker
 function devenv() {
     docker run -i --rm=false -v $(pwd):/home -t icecreammatt/devenv /bin/zsh
