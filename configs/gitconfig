@@ -9,13 +9,13 @@
 	excludesfile = /Users/matt/.gitignore_global
     autocrlf = input
 [difftool "sourcetree"]
-	cmd = /opt/homebrew-cask/Caskroom/p4merge/2014.2/p4merge.app/Contents/MacOS/p4merge \"$LOCAL\" \"$REMOTE\"
+	cmd = /Users/matt/bin/p4merge \"$LOCAL\" \"$REMOTE\"
 	path = 
 [merge]
 	tool = p4merge
 	keepBackup = false
 [mergetool "p4merge"]
-    cmd = /opt/homebrew-cask/Caskroom/p4merge/2014.2/p4merge.app/Contents/Resources/launchp4merge "$PWD/$BASE" "$PWD/$REMOTE" "$PWD/$LOCAL" "$PWD/$MERGED"
+    cmd = /Users/matt/bin/p4merge "$PWD/$BASE" "$PWD/$REMOTE" "$PWD/$LOCAL" "$PWD/$MERGED"
 	keepTemporaries = false
 	trustExitCode = false
 	keepBackup = false
