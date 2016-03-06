@@ -153,10 +153,13 @@ Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 
 "{ lean & mean status/tabline for vim that's light as air"
-Plug 'bling/vim-airline'
-let g:airline_powerline_fonts = 1
-"let g:airline_theme='powerlineish'
-let g:airline_theme='zenburn'
+" Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+let g:airline_powerline_fonts = 0
+" let g:airline_theme='powerlineish'
+let g:airline_theme='base16'
+let g:tmuxline_powerline_separators = 0
 set laststatus=2
 
 " if !exists('g:airline_symbols')
@@ -224,7 +227,7 @@ let NERDTreeIgnore=['\.pyc$', '\.o$', '\~$', 'node_modules$', 'build$', '\.git',
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
 "Vim local themes for powerline
-Plug 'zhaocai/linepower.vim'
+" Plug 'zhaocai/linepower.vim'
 
 "Seamless navigation between tmux panes and vim splits
 Plug 'christoomey/vim-tmux-navigator'
@@ -275,6 +278,7 @@ set background=dark
 " === End molokai Settings ===
 
 " === Base16 Settings ===
+let base16colorspace=256
 colorscheme base16-eighties
 highlight! link MatchParen StatusLine
 "hi CursorLine   cterm=reverse "keeping this one just for reference
