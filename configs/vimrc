@@ -313,9 +313,9 @@ set autoindent
 
 set number
 set backspace=indent,eol,start
-if $TMUX == ''
-    set clipboard+=unnamed
-endif
+" if $TMUX == ''
+"     set clipboard+=unnamed
+" endif
 set directory=$HOME/.vim/swapfiles//
 "}
 
