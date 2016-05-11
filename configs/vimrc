@@ -54,13 +54,13 @@ Plug 'https://github.com/mikewest/vimroom'
 Plug 'groenewege/vim-less'
 
 " Vim syntax highlighting for GCSS
-Plug 'yosssi/vim-gcss'
+" Plug 'yosssi/vim-gcss'
 
 " Write CSS faster http://ricostacruz.com/vim-hyperstyle/
 " Plug 'rstacruz/vim-hyperstyle'
 
 " vim plugin which formated javascript files by js-beautify
-Plug 'maksimr/vim-jsbeautify'
+" Plug 'maksimr/vim-jsbeautify'
 
 " Beautifier for javascript
 Plug 'einars/js-beautify'
@@ -82,7 +82,7 @@ Plug 'mustache/vim-mustache-handlebars'
 Plug 'elzr/vim-json'
 
 " javascript syntax
-Plug 'jelera/vim-javascript-syntax'
+" Plug 'jelera/vim-javascript-syntax'
 
 " Vastly improved Javascript indentation and syntax support in Vim.
 Plug 'pangloss/vim-javascript'
@@ -198,10 +198,10 @@ let g:airline_right_sep = ''
 Plug 'edkolev/tmuxline.vim'
 
 " Syntax Highlighting for Stylus
-Plug 'wavded/vim-stylus'
+" Plug 'wavded/vim-stylus'
 
 " Vim Jade template engine syntax highlighting and indention
-Plug 'digitaltoad/vim-jade'
+" Plug 'digitaltoad/vim-jade'
 
 " Vim support for Rust file detection and syntax highlighting.
 " Plug 'wting/rust.vim'
