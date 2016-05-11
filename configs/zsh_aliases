@@ -30,6 +30,8 @@ alias memory='ps -A u | sort -k 4 -r | head'
 alias diff="diff -u"
 alias todo="ag todo"
 alias hist="history | tail -n 25 | cut -d \" \" -f 3-"
+alias kat="ccat"
+alias vat="vimcat"
 
 if [[ $OSTYPE == "cygwin" ]]; then
     alias o='explorer . &'
