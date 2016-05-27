@@ -94,7 +94,7 @@ Plug 'mxw/vim-jsx'
 Plug 'editorconfig/editorconfig-vim'
 
 " Vim plugin that displays tags in a window, ordered by scope
-Plug 'majutsushi/tagbar'
+" Plug 'majutsushi/tagbar'
 
 " A Vim plugin for visually displaying indent levels in code
 " Plug 'nathanaelkane/vim-indent-guides'
@@ -106,17 +106,6 @@ Plug 'majutsushi/tagbar'
 " Vim plugin, provides insert mode auto-completion for quotes, parens,
 "brackets, etc.
 Plug 'Raimondi/delimitMate'
-
-" sublime text like control p
-" Plug 'kien/ctrlp.vim'
-" let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|venv\|build\|deploy'
-" let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
-" let g:ctrlp_user_command = {
-"     \ 'types': {
-"         \ 1: ['.git', 'cd %s && git ls-files'],
-"         \ },
-"     \ 'fallback': 'find %s -type f'
-"     \ }
 
 " git diff marks in gutter
 Plug 'airblade/vim-gitgutter'
