@@ -1,6 +1,3 @@
-#PS1='$(networksetup -getcomputername):\W \u\$ '
-PS1="\W \$ "
-
 # Alias List
 alias ll='ls -lh'
 alias l='ls -lh'
@@ -21,9 +18,7 @@ alias gprom='git pull --rebase origin master'
 alias gpom='git push origin master'
 alias grh='git reset --hard'
 
-# Tell ls to be colorful
-export CLICOLOR=1
-export LSCOLORS=Exfxcxdxbxegedabagacad
-
 # Tell grep to highlight matches
 export GREP_OPTIONS='--color=auto'
+
+export PS1="\u@\h \W \[\e[32m\]\\$\[\e[m\] ""]]"
