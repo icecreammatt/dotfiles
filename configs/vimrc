@@ -108,9 +108,9 @@ Plug 'majutsushi/tagbar'
 Plug 'Raimondi/delimitMate'
 
 " sublime text like control p
-Plug 'kien/ctrlp.vim'
+" Plug 'kien/ctrlp.vim'
 " let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|venv\|build\|deploy'
-let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+" let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 " let g:ctrlp_user_command = {
 "     \ 'types': {
 "         \ 1: ['.git', 'cd %s && git ls-files'],
@@ -154,7 +154,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-fugitive'
 
 " A command-line fuzzy finder written in Go 
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 "{ lean & mean status/tabline for vim that's light as air"
 " Plug 'bling/vim-airline'
@@ -211,7 +211,7 @@ Plug 'cespare/vim-toml'
 
 "{ Syntax checking hacks for vim
 Plug 'scrooloose/syntastic'
-let g:syntastic_javascript_checkers = ['jshint', 'jscs', 'eslint']
+let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_error_symbol = '✗'
 let g:syntastic_warning_symbol='⚠'
 "let g:syntastic_auto_jump=1
@@ -378,6 +378,8 @@ noremap <RIGHT> <NOP>
 
 nnoremap <space> <C-d>
 nnoremap <leader><space> <C-u>
+
+nnoremap <c-p> :FZF<CR>
 
 noremap <c-s> :w<CR>
 imap <c-s> <Esc>:w<CR>a
