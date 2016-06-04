@@ -46,3 +46,6 @@ source ~/dotfiles/tools/check_for_upgrade.sh
 
 export NVM_DIR="/Users/matt/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# Fix issue with zsh terminal paste ending with ~
+unset zle_bracketed_paste
