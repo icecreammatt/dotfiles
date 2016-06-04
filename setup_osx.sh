@@ -85,6 +85,7 @@ binaries=(
     ssh-copy-id
     coreutils
     fzf
+    reattach-to-user-namespace
 )
 
 echo "Installing brew binaries"
