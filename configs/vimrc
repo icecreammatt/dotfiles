@@ -74,12 +74,10 @@ Plug 'isRuslan/vim-es6'
 " mustache and handlebars mode for vim
 Plug 'mustache/vim-mustache-handlebars'
 
-" filetype detection and syntax highlightnig for JSON in Vim
-" Plug 'helino/vim-json'
-
 "  A better JSON for Vim: distinct highlighting of keywords vs values,
 "  JSON-specific (non-JS) warnings, quote concealing. Pathogen-friendly. 
 Plug 'elzr/vim-json'
+let g:vim_json_syntax_conceal = 0
 
 " javascript syntax
 " Plug 'jelera/vim-javascript-syntax'
