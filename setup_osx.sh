@@ -86,6 +86,7 @@ binaries=(
     coreutils
     fzf
     reattach-to-user-namespace
+    git-standup
 )
 
 echo "Installing brew binaries"
