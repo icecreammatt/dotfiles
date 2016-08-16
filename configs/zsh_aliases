@@ -32,6 +32,7 @@ alias todo="ag todo"
 alias hist="history | tail -n 25 | cut -d \" \" -f 3-"
 alias kat="ccat"
 alias vat="vimcat"
+alias pwdcp="pwd | pbcopy"
 
 if [[ $OSTYPE == "cygwin" ]]; then
     alias o='explorer . &'
