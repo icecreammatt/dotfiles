@@ -289,8 +289,8 @@ set cursorline
 "}
 
 "{ General settings
-set listchars=tab:▸\ ,eol:¬
-set list " View whitespace
+"set listchars=tab:▸\ ,eol:
+"set list " View whitespace
 cmap w!! w !sudo tee > /dev/null %
 
 set ignorecase
