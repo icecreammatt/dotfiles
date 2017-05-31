@@ -98,6 +98,9 @@ function facl() {
 # Node
 alias npmi='npm install'
 alias npmig='npm install -g'
+alias nbw='node bin/www'
+
+alias bi='bower install'
 
 # Docker
 function devenv() {
@@ -128,6 +131,7 @@ alias dp='docker ps'
 
 unalias gg
 gg() { git commit -m "$*" }
+ggn() { git commit --no-verify -m "$*" }
 alias g='git status -s'
 alias gs='git show'
 alias gf='git fetch --all'
@@ -166,6 +170,7 @@ alias gsd='git stash show -p stash@{0}'
 alias gmt='git mergetool'
 alias ggg='gf;grom;gsub;'
 alias g4='grh;gf;grom;gsub;'
+alias gpo='git push origin'
 
 # Tig
 alias t='tig status'
