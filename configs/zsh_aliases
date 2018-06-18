@@ -10,6 +10,7 @@ alias ealias='vim ~/.zsh_aliases'
 alias udot="$HOME/dotfiles/tools/upgrade.sh"
 
 # General
+alias yt='youtube-dl'
 alias m='make'
 alias tv='terminal_velocity ~/Dropbox/NotationalVelocity'
 alias hn='hn -c | less'
@@ -97,6 +98,8 @@ function facl() {
 
 # Node
 alias npmi='npm install'
+alias npml='npm run lint'
+alias npmt='npm test'
 alias npmig='npm install -g'
 alias nbw='node bin/www'
 
