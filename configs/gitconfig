@@ -9,7 +9,7 @@
 	excludesfile = /Users/matt/.gitignore_global
     autocrlf = input
 [difftool "sourcetree"]
-	cmd = /Users/matt/bin/p4merge \"$LOCAL\" \"$REMOTE\"
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [merge]
 	tool = p4merge
