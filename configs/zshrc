@@ -32,11 +32,8 @@ plugins=(git zsh-autosuggestions)
 GOPATH=$HOME/go
 GOBIN=$HOME/go/bin
 generalPath="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-windowsPath="/c/Windows/System32:/c/Program Files/Perforce"
-ruby="$HOME/.rbenv/shims"
-
-export PATH=$HOME/bin:$ruby:$generalPath:$GOPATH:$GOBIN:$windowsPath
-export ANSIBLE_HOSTS=$HOME/ansible/hosts
+python="$HOME/Library/Python/2.7/bin"
+export PATH=$HOME/bin:$generalPath:$GOPATH:$GOBIN:$python
 
 [ -e "${HOME}/.zsh_aliases" ] && source "${HOME}/.zsh_aliases"
 [ -e "${HOME}/.zshrc_local" ] && source "${HOME}/.zshrc_local"
