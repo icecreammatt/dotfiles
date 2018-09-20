@@ -43,6 +43,8 @@ else
     alias e='open . &'
 fi
 
+alias stree='merge'
+alias sm='merge'
 merge () {
     if [[ $# = 0 ]]
     then
