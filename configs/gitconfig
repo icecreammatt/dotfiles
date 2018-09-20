@@ -8,6 +8,7 @@
 [core]
 	excludesfile = /Users/matt/.gitignore_global
     autocrlf = input
+	trustctime = false
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
