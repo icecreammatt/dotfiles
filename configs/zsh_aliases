@@ -43,6 +43,16 @@ else
     alias e='open . &'
 fi
 
+merge () {
+    if [[ $# = 0 ]]
+    then
+        open -n -a "Sublime Merge"
+    else
+        [[ $1 = /* ]] && F="$1" || F="$PWD/${1#./}"
+        open -n -a "Sublime Merge" --args "$F"
+    fi
+}
+
 code () {
     if [[ $# = 0 ]]
     then
