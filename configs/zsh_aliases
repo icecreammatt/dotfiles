@@ -35,6 +35,8 @@ alias kat="ccat"
 alias vat="vimcat"
 alias pwdcp="pwd | pbcopy"
 
+alias pip="pip3"
+
 if [[ $OSTYPE == "cygwin" ]]; then
     alias o='explorer . &'
     alias e='explorer . &'
