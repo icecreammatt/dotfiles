@@ -2,26 +2,13 @@
 	name = Matt Carrier
 	email = icecreammatt@gmail.com
 [color]
-	ui = true
-[merge]
-	tool = p4merge
+    ui = true
 [core]
-	excludesfile = /Users/matt/.gitignore_global
+    excludesfile = /Users/matt/.gitignore_global
     autocrlf = input
-	trustctime = false
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[merge]
-	tool = p4merge
-	keepBackup = false
-[mergetool "p4merge"]
-    cmd = /Users/matt/bin/p4merge "$PWD/$BASE" "$PWD/$REMOTE" "$PWD/$LOCAL" "$PWD/$MERGED"
-	keepTemporaries = false
-	trustExitCode = false
-	keepBackup = false
+    trustctime = false
 [alias]
-	#lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+    #lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
     lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
     lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
     lg = !"git lg1"
@@ -30,11 +17,11 @@
     ec = config --global -e
     wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
 [push]
-	default = simple
+    default = simple
 [pull]
     default = simple
 [grep]
-	lineNumber = true
+    lineNumber = true
 #[pager]
     #diff = diff-so-fancy | less --tabs=1,5 -RFX
     #show = diff-so-fancy | less --tabs=1,5 -RFX
