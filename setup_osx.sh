@@ -87,6 +87,7 @@ binaries=(
     fzf
     reattach-to-user-namespace
     git-standup
+    icdiff
 )
 
 echo "Installing brew binaries"
@@ -100,7 +101,6 @@ brew install caskroom/cask/brew-cask
 
 apps=(
     grandperspective
-    vagrant
 )
 echo "Installing brew apps"
 brew cask install --appdir="/Applications" ${apps[@]}
@@ -109,16 +109,10 @@ brew cask alfred link
 
 # Install node basics
 nodepackages=(
-    jshint 
-    tldr 
+    tldr
     gulp 
-    bower 
     typescript
-    node-inspector
     yo
-    bower
-    nws
-    browserify
 )
 
 echo "Installing node packages..."
