@@ -8,7 +8,7 @@ EDITOR=vim;
 # on the same line as the clock so when copying and pasting output I no
 # longer have to delete the RPROMPT text
 # See ~/dotfiles/directories/oh-my-zsh/custom/themes for the override
-ZSH_THEME="bureau"
+ZSH_THEME="tomorrow"
 
 # Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/base16-eighties.dark.sh"

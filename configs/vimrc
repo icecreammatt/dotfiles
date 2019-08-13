@@ -1,5 +1,5 @@
 " Modeline and Notes {
-" vim: set foldmarker={,} foldlevel=0 foldmethod=marker spell:
+" vim: set foldmarker={,} foldlevel=0 foldmethod=marker:
 "
 " Vim folding commands
 " zf#j creates a fold from the cursor down # lines.
@@ -45,7 +45,7 @@ let g:go_highlight_build_constraints = 1
 Plug 'chriskempson/base16-vim'
 
 " Molokai color scheme for Vim
-Plug 'tomasr/molokai'
+" Plug 'tomasr/molokai'
 
 " Simulating a vaguely WriteRoom-like environment in Vim. 
 Plug 'https://github.com/mikewest/vimroom'
@@ -156,7 +156,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 let g:airline_powerline_fonts = 0
 " let g:airline_theme='powerlineish'
-let g:airline_theme='base16'
+" let g:airline_theme='base16'
+let g:airline_theme='tomorrow'
 let g:tmuxline_powerline_separators = 0
 set laststatus=2
 
@@ -189,7 +190,7 @@ let g:airline_right_sep = ''
 
 " Simple tmux statusline generator with support for powerline symbols and
 " airline integration"
-Plug 'edkolev/tmuxline.vim'
+" Plug 'edkolev/tmuxline.vim'
 
 " Syntax Highlighting for Stylus
 " Plug 'wavded/vim-stylus'
@@ -284,21 +285,22 @@ set guifont=UbuntuMono:h14
 let g:airline_powerline_fonts = 1
 
 syntax on
-set background=dark
+set background=light
 
 " === molokai Settings ===
-"set t_Co=256
+" set t_Co=256
 "colorscheme molokai
 " === End molokai Settings ===
 
 " === Base16 Settings ===
 let base16colorspace=256
-colorscheme base16-eighties
-highlight! link MatchParen StatusLine
-"hi CursorLine   cterm=reverse "keeping this one just for reference
-hi CursorLine   cterm=NONE
-hi CursorLineNr cterm=NONE ctermfg=darkblue ctermbg=black
-hi Search cterm=NONE ctermfg=black ctermbg=blue
+" colorscheme base16-tomorrow
+" highlight! link MatchParen StatusLine
+" hi CursorLine   cterm=reverse "keeping this one just for reference
+" hi CursorLine   cterm=NONE ctermfg=black ctermbg=white
+hi CursorLine   cterm=NONE ctermbg=white
+hi CursorLineNr cterm=NONE ctermfg=black ctermbg=white
+hi Search cterm=NONE ctermfg=black ctermbg=white
 
 set cursorline
 " autocmd InsertEnter * highlight CursorLine guifg=white guibg=blue ctermfg=white ctermbg=blue
