@@ -34,7 +34,8 @@ GOBIN=$HOME/go/bin
 generalPath="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 #python="$HOME/Library/Python/2.7/bin"
 #export PATH=$HOME/bin:$generalPath:$GOPATH:$GOBIN:$python
-export PATH=$HOME/bin:$generalPath:$GOPATH:$GOBIN
+NODE=~/.npm-global/bin
+export PATH=$HOME/bin:$generalPath:$NODE:$GOPATH:$GOBIN
 
 [ -e "${HOME}/.zsh_aliases" ] && source "${HOME}/.zsh_aliases"
 [ -e "${HOME}/.zshrc_local" ] && source "${HOME}/.zshrc_local"
