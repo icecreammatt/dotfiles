@@ -153,6 +153,7 @@ alias dp='docker ps'
 unalias gg
 gg() { git commit -m "$*" }
 ggn() { git commit --no-verify -m "$*" }
+alias ggg='git cz'
 alias g='git status -s'
 alias gs='git show'
 alias gf='git fetch --all'
@@ -186,12 +187,12 @@ alias gp='git pull --rebase'
 alias gss='git stash save'
 alias gsp='git stash pop'
 alias grh='git reset --hard'
-alias gclean='git remote prune origin; git branch --merged | grep -v -E "(\*|master)" | xargs -n 1 git branch -d'
+alias gclean='git remote prune origin; git branch --merged | grep -v -E "(\*|master|dev|release|hotfix|prod)" | xargs -n 1 git branch -d'
+alias gcleanlocal='git branch | grep -v -E "(\*|master|dev|release|hotfix|prod)" | xargs -n 1 git branch -D'
 alias gsub='git submodule update --init --recursive'
 alias gsl='git stash list'
 alias gsd='git stash show -p stash@{0}'
 alias gmt='git mergetool'
-alias ggg='gf;grom;gsub;'
 alias g4='grh;gf;grom;gsub;'
 alias gpo='git push origin'
 
