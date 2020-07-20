@@ -29,7 +29,6 @@ setw -g window-status-activity-style fg="#3e999f",bg="#ffffff"
 set -g clock-mode-colour "#4271ae"
 set -g clock-mode-style 24
 
-
 set -g message-command-style bg="#3e999f",fg="#000000"
 
 # message bar or "prompt"
@@ -45,7 +44,7 @@ set -g status-right-style fg=black,bold
 set -g status-right '#[fg=#6699cc] %A %h %d #[fg=#cc99cc,bg=#ffffff]|#[fg=#f99157,bg=#ffffff] %I:%M '
 
 # make background window look like white tab
-set-window-option -g window-status-style bg=default,fg=white,none
+set-window-option -g window-status-style bg=default,fg="#dddddd",none
 set-window-option -g window-status-format '#[fg=#white,bg=ffffff] #I #[fg=#white,bg=#ffffff] #W #[default]'
 
 # make foreground window look like bold yellow foreground tab

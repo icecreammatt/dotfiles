@@ -281,13 +281,15 @@ filetype plugin indent on
 
 "{ Theme settings
 set encoding=utf8
-set guifont=UbuntuMono:h14
+set guifont="Consolas Code PL":h14
 let g:airline_powerline_fonts = 1
 
 syntax on
 set background=light
 
 " === molokai Settings ===
+"
+" This value needs to be set or colors will not look the same in tmux
 set t_Co=256
 "colorscheme molokai
 " === End molokai Settings ===
@@ -297,10 +299,11 @@ let base16colorspace=256
 " colorscheme base16-tomorrow
 " highlight! link MatchParen StatusLine
 " hi CursorLine   cterm=reverse "keeping this one just for reference
-" hi CursorLine   cterm=NONE ctermfg=black ctermbg=white
-hi CursorLine   cterm=NONE ctermbg=white
-hi CursorLineNr cterm=NONE ctermfg=black ctermbg=white
-hi Search cterm=NONE ctermfg=black ctermbg=gray
+hi CursorLine   cterm=NONE ctermbg=254
+hi CursorLineNr cterm=NONE ctermfg=1 ctermbg=255
+hi Search cterm=NONE ctermfg=black ctermbg=251
+
+" set background=dark
 
 set cursorline
 " autocmd InsertEnter * highlight CursorLine guifg=white guibg=blue ctermfg=white ctermbg=blue
