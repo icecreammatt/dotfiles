@@ -2,23 +2,25 @@
 ZSH=$HOME/.oh-my-zsh
 
 setopt allexport
-EDITOR=vim; 
+EDITOR=nvim;
 
-# I use a overridden version of this theme which moves the git prompt 
+export BAT_CONFIG_PATH="/Users/mcarrier/.bat.conf"
+
+# I use a overridden version of this theme which moves the git prompt
 # on the same line as the clock so when copying and pasting output I no
 # longer have to delete the RPROMPT text
 # See ~/dotfiles/directories/oh-my-zsh/custom/themes for the override
-ZSH_THEME="tomorrow"
+ZSH_THEME="Tomorrow"
 
 # Base16 Shell
-BASE16_SHELL="$HOME/.config/base16-shell/base16-eighties.dark.sh"
+# BASE16_SHELL="$HOME/.config/base16-shell/base16-eighties.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 # Uncomment following line if you want to disable autosetting terminal title.
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
-COMPLETION_WAITING_DOTS="true"
+# COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -26,14 +28,14 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git zsh-autosuggestions)
 
 [ -f $ZSH/oh-my-zsh.sh ] && source $ZSH/oh-my-zsh.sh
-[ -f ~/bin/k ] && source ~/bin/k
+# [ -f ~/bin/k ] && source ~/bin/k
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+fpath+=$HOME/.zsh/pure
 
 GOPATH=$HOME/go
 GOBIN=$HOME/go/bin
 generalPath="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-#python="$HOME/Library/Python/2.7/bin"
-#export PATH=$HOME/bin:$generalPath:$GOPATH:$GOBIN:$python
 NODE=~/.npm-global/bin
 export PATH=$HOME/bin:$generalPath:$NODE:$GOPATH:$GOBIN
 
@@ -48,3 +50,7 @@ unset zle_bracketed_paste
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 bindkey '^ ' autosuggest-accept
+
+autoload -U promptinit; promptinit
+
+# prompt pure

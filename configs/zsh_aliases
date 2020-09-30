@@ -1,24 +1,29 @@
 # Quick Edits
-alias zshrc='vim ~/.zshrc'
-alias vimrc='vim ~/.vimrc'
+alias zshrc='nvim ~/.zshrc'
+alias vimrc='nvim ~/.vimrc'
 alias rzsh='source ~/.zshrc'
 alias vssh='less ~/.ssh/config'
-alias essh='vim ~/.ssh/config'
+alias essh='nvim ~/.ssh/config'
 alias vhosts='less /etc/hosts'
-alias ehosts='sudo vim /etc/hosts'
-alias ealias='vim ~/.zsh_aliases'
+alias ehosts='sudo nvim /etc/hosts'
+alias ealias='nvim ~/.zsh_aliases'
 alias udot="$HOME/dotfiles/tools/upgrade.sh"
+alias vi='nvim'
+alias ls=exa
+alias cat='bat -p'
+alias dotfiles="cd ~/dotfiles"
 
 # General
 alias yt='youtube-dl'
 alias m='make'
 alias tv='terminal_velocity ~/Dropbox/NotationalVelocity'
 alias hn='hn -c | less'
-#alias vi="stty stop '' -ixoff; vim"
-alias vim="stty stop '' -ixoff; vim"
+#alias vi="stty stop '' -ixoff; nvim"
+alias vim="stty stop '' -ixoff; nvim"
 alias ,='cd ..'
 alias cl='clear; ls -lA1h'
 alias ll='ls -lah'
+alias la='ls -la'
 alias l='ls -lh'
 alias df="df -h"
 alias du="du -h"
@@ -211,7 +216,7 @@ function gd() {
     fi
 }
 
-cover () { 
+cover () {
     t="/tmp/go-cover.$$.tmp"
     go test -coverprofile=$t $@ && go tool cover -html=$t && unlink $t
 }

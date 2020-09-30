@@ -23,7 +23,7 @@
 call plug#begin('~/.vim/plugged')
 
 " let Vundle manage Vundle
-" required! 
+" required!
 Plug 'gmarik/vundle'
 
 " iA Writer vim colorscheme
@@ -47,7 +47,7 @@ Plug 'chriskempson/base16-vim'
 " Molokai color scheme for Vim
 " Plug 'tomasr/molokai'
 
-" Simulating a vaguely WriteRoom-like environment in Vim. 
+" Simulating a vaguely WriteRoom-like environment in Vim.
 Plug 'https://github.com/mikewest/vimroom'
 
 " vim syntax for LESS (dynamic CSS)
@@ -65,7 +65,7 @@ Plug 'groenewege/vim-less'
 " Beautifier for javascript
 Plug 'einars/js-beautify'
 
-" List of JavaScript ES6 snippets and syntax highlighting for vim. 
+" List of JavaScript ES6 snippets and syntax highlighting for vim.
 Plug 'isRuslan/vim-es6'
 
 " Vim syntax highlighting for Go templates.
@@ -75,7 +75,7 @@ Plug 'isRuslan/vim-es6'
 Plug 'mustache/vim-mustache-handlebars'
 
 "  A better JSON for Vim: distinct highlighting of keywords vs values,
-"  JSON-specific (non-JS) warnings, quote concealing. Pathogen-friendly. 
+"  JSON-specific (non-JS) warnings, quote concealing. Pathogen-friendly.
 Plug 'elzr/vim-json'
 let g:vim_json_syntax_conceal = 0
 
@@ -143,7 +143,7 @@ Plug 'ryanoasis/vim-devicons'
 " fugitive.vim: a Git wrapper so awesome, it should be illegal
 Plug 'tpope/vim-fugitive'
 
-" A command-line fuzzy finder written in Go 
+" A command-line fuzzy finder written in Go
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
@@ -184,7 +184,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_min_count = 3
 
 " Remove > and < style
-let g:airline_left_sep = '' 
+let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 "}
 
@@ -488,7 +488,7 @@ function! PositionCursorFromViminfo()
     endif
 endfunction
 au BufReadPost * call PositionCursorFromViminfo()
- 
+
 " Jump to the last position of the cursor
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 "}
