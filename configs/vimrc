@@ -247,7 +247,7 @@ Plug 'Lokaltog/vim-easymotion'
 
 " code autocompletion
 " NOTE: Requires extra compilation setup
-Plug 'Valloric/YouCompleteMe'
+" Plug 'Valloric/YouCompleteMe'
 
 " UltiSnips - The ultimate snippet solution for Vim. Send pull requests to SirVer/ultisnips!
 Plug 'sirver/ultisnips'
