@@ -5,4 +5,5 @@
 directories/vim/bundle/*
 directories/vim/autoload/
 directories/vim/plugged/
+directories/vim/undo-dir/*
 .idea/
