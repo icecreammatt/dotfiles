@@ -114,12 +114,24 @@ nnoremap tw :call ToggleTextWidth()<CR>
 nnoremap <Leader>n :bn<CR>
 nnoremap <Leader>p :bp<CR>
 nnoremap <Leader>q :bp <BAR> bd #<CR>
-nnoremap <Leader>vp :vsplit<CR>
-nnoremap <Leader>hp :split<CR>
-nnoremap <Leader>vs :vertical resize +
+" nnoremap <Leader>vp :vsplit<CR>
+" nnoremap <Leader>hp :split<CR>
+" nnoremap <Leader>vs :vertical resize +
 
-noremap <Leader>vs :vertical resize +
-nnoremap <Leader>hs :resize +
+" noremap <Leader>vs :vertical resize +
+" nnoremap <Leader>hs :resize +
+
+" Resize panes
+noremap <Leader>h :vertical resize -10<CR>
+noremap <Leader>l :vertical resize +10<CR>
+noremap <Leader>j :resize -10<CR>
+noremap <Leader>k :resize +10<CR>
+
+" Resize panes
+noremap <Leader>a :vertical resize -10<CR>
+noremap <Leader>d :vertical resize +10<CR>
+noremap <Leader>s :resize -10<CR>
+noremap <Leader>w :resize +10<CR>
 
 nnoremap <Leader>ah <C-W>H
 nnoremap <Leader>aj <C-W>J
