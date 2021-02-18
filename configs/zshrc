@@ -12,6 +12,9 @@ export BAT_CONFIG_PATH="/Users/mcarrier/.bat.conf"
 # See ~/dotfiles/directories/oh-my-zsh/custom/themes for the override
 ZSH_THEME="Tomorrow"
 
+# bat CLI tool theme
+export BAT_THEME="TwoDark"
+
 # Base16 Shell
 # BASE16_SHELL="$HOME/.config/base16-shell/base16-eighties.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
