@@ -31,6 +31,15 @@ function! ToggleRelativeLineNumbers()
     endif
 endfunction
 
+" Toggle line numbers
+function! ToggleLineNumbers()
+    if (&number)
+        set nonumber
+    else
+        set number
+    endif
+endfunction
+
 " Toggle indenting with tabs and spaces
 function! ToggleIndentType()
     if &expandtab == 1
@@ -104,6 +113,7 @@ nnoremap <Leader>wr :set wrap!<CR>
 nnoremap <Leader>hl :set hlsearch!<CR>
 nnoremap <Leader>t :call ToggleIndentType()<CR>
 nnoremap <Leader><Leader>rn :call ToggleRelativeLineNumbers()<CR>
+nnoremap <Leader><Leader>n :call ToggleLineNumbers()<CR>
 nnoremap <Space> za
 vnoremap <Space> za
 nnoremap tw :call ToggleTextWidth()<CR>
