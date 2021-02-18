@@ -34,6 +34,7 @@ alias pd='popd'
 alias md='mkdir'
 alias memory='ps -A u | sort -k 4 -r | head'
 alias diff="diff -u"
+alias ag="rg"
 alias todo="ag todo"
 alias hist="history | tail -n 25 | cut -d \" \" -f 3-"
 alias kat="ccat"
