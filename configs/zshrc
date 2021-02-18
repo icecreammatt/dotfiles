@@ -10,6 +10,9 @@ export BAT_CONFIG_PATH="/Users/mcarrier/.bat.conf"
 # on the same line as the clock so when copying and pasting output I no
 # longer have to delete the RPROMPT text
 # See ~/dotfiles/directories/oh-my-zsh/custom/themes for the override
+# Default theme
+#ZSH_THEME="robbyrussell"
+
 ZSH_THEME="Tomorrow"
 
 # bat CLI tool theme
