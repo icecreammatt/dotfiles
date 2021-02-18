@@ -25,7 +25,9 @@ ZSH_THEME="Tomorrow"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git zsh-autosuggestions)
+
+#plugins=(git zsh-autosuggestions)
+plugins=(git)
 
 [ -f $ZSH/oh-my-zsh.sh ] && source $ZSH/oh-my-zsh.sh
 # [ -f ~/bin/k ] && source ~/bin/k
@@ -48,8 +50,8 @@ source ~/dotfiles/tools/check_for_upgrade.sh
 # Fix issue with zsh terminal paste ending with ~
 unset zle_bracketed_paste
 
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-bindkey '^ ' autosuggest-accept
+#source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+#bindkey '^ ' autosuggest-accept
 
 autoload -U promptinit; promptinit
 
