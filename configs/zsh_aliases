@@ -221,3 +221,7 @@ cover () {
     t="/tmp/go-cover.$$.tmp"
     go test -coverprofile=$t $@ && go tool cover -html=$t && unlink $t
 }
+
+groovyreport () {
+    open build/reports/tests/test/index.html
+}
