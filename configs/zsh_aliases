@@ -40,6 +40,7 @@ alias hist="history | tail -n 25 | cut -d \" \" -f 3-"
 alias kat="ccat"
 alias vat="vimcat"
 alias pwdcp="pwd | pbcopy"
+alias cdp="cd $(pbpaste)"
 
 nodeES6 () {
     node --experimental-modules $1
