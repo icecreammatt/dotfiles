@@ -41,6 +41,7 @@ alias kat="ccat"
 alias vat="vimcat"
 alias pwdcp="pwd | pbcopy"
 alias cdp="cd $(pbpaste)"
+alias c="code ."
 
 nodeES6 () {
     node --experimental-modules $1
@@ -127,6 +128,7 @@ alias npml='npm run lint'
 alias npmt='npm test'
 alias npmig='npm install -g'
 alias nbw='node bin/www'
+alias pjson='vi package.json'
 
 alias bi='bower install'
 
@@ -138,11 +140,12 @@ alias dockercleancontainers="docker ps -a --no-trunc| grep 'Exit' | awk '{print 
 alias dockercleanimages="docker images -a --no-trunc | grep none | awk '{print \$3}' | xargs -L 1 -r docker rmi"
 alias dockerclean="dockercleancontainers && dockercleanimages"
 
-# tmux
+# jmux
 alias tmux='tmux -2'
 alias tma='tmux -2 attach -d -t'
 alias tm='tmux -2 new -s $(basename $(pwd))'
-alias tml='tmux list-sessions'
+alias tml='tmux ls -F "#{session_name}"'
+alias tmll='tmux list-sessions'
 alias tmr='tmux rename-session -t'
 alias tmn='tmux new-session -t base'
 alias tmk='tmux kill-session -t'
@@ -195,8 +198,8 @@ alias gp='git pull --rebase'
 alias gss='git stash save'
 alias gsp='git stash pop'
 alias grh='git reset --hard'
-alias gclean='git remote prune origin; git branch --merged | grep -v -E "(\*|master|dev|release|hotfix|trunk|prod)" | xargs -n 1 git branch -d'
-alias gcleanlocal='git branch | grep -v -E "(\*|master|dev|release|hotfix|trunk|prod)" | xargs -n 1 git branch -D'
+alias gclean='git remote prune origin; git branch --merged | grep -v -E "(\*|master|main|dev|release|hotfix|trunk|prod)" | xargs -n 1 git branch -d'
+alias gcleanlocal='git branch | grep -v -E "(\*|master|dev|release|main|hotfix|trunk|prod)" | xargs -n 1 git branch -D'
 alias gsub='git submodule update --init --recursive'
 alias gsl='git stash list'
 alias gsd='git stash show -p stash@{0}'
@@ -227,3 +230,5 @@ cover () {
 groovyreport () {
     open build/reports/tests/test/index.html
 }
+
+alias bane=bane2
