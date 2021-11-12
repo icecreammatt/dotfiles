@@ -22,3 +22,4 @@ alias grh='git reset --hard'
 export GREP_OPTIONS='--color=auto'
 
 export PS1="\u@\h \W \[\e[32m\]\\$\[\e[m\] ""]]"
+source "$HOME/.cargo/env"
