@@ -72,7 +72,7 @@ nnoremap <C-h> <C-W><C-H>
 nnoremap <LEFT> :2 wincmd <<CR>
 nnoremap <RIGHT> :2 wincmd ><CR>
 nnoremap <UP> :2 wincmd +<CR>
-nnoremap <UP> :2 wincmd +<CR>
+nnoremap <DOWN> :2 wincmd -<CR>
 
 nnoremap H ^
 nnoremap L $
