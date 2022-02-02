@@ -163,7 +163,7 @@ alias dp='docker ps'
 unalias gg
 gg() { git commit -m "$*" }
 ggn() { git commit --no-verify -m "$*" }
-alias amend='git commit --amend'
+alias amend='git commit --amend --no-edit'
 alias ggg='npx cz'
 alias g='git status -s'
 alias gs='git show'
