@@ -102,6 +102,9 @@ noremap <c-s> :w<CR>
 imap <c-s> <Esc>:w<CR>a
 imap <c-s> <Esc><c-s>
 
+noremap <Leader>m :NV<CR>
+imap <Leader>m <Esc>:NV<CR>
+
 " FZF
 nnoremap <c-p> :GFiles<CR>
 

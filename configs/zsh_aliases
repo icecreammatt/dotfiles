@@ -12,6 +12,7 @@ alias vi='nvim'
 alias ls=exa
 alias cat='bat -p'
 alias dotfiles="cd ~/dotfiles"
+alias nv="cd ~/notes && vi -c :NV"
 
 # General
 alias yt='youtube-dl'

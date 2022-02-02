@@ -42,6 +42,15 @@ Plug 'junegunn/fzf.vim'
 " Plug 'yuki-ycino/fzf-preview.vim'
 Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release', 'do': ':UpdateRemotePlugins' }
 
+" Plug 'lotabout/skim', { 'dir', '~/.skim', 'do', './install' }
+
+" with vim-plug
+" Plug 'https://github.com/alok/notational-fzf-vim'
+" Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
+" let g:nv_search_paths = ['~/Documents/standup', '~/notes', '~/code', 'docs.md' , './notes.md']
+
+
 " Syntax
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'pangloss/vim-javascript'
@@ -142,6 +151,11 @@ let g:coc_global_extensions = [
     \ 'coc-json',
     \ 'coc-tsserver'
 \ ]
+
+" ########################################################################
+" ######## Vim-Notational-FZF
+" ########################################################################
+"nnoremap <Leader>5 :NV<CR>
 
 " ########################################################################
 " ######## Vim-Signify
