@@ -4,7 +4,7 @@
 let mapleader=","
 
 " 0 means use light theme
-let enableLightTheme=0
+let enableLightTheme=1
 
 " ########################################################################
 " ######## Vim Plug and Plugins
@@ -202,19 +202,19 @@ syntax on
 set termguicolors
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-:if enableLightTheme
+" :if enableLightTheme
     " Dark theme
     colorscheme "Tomorrow-Night-Eighties"
     set background=dark
     highlight Visual guifg=#575757 guibg=#d1d1d1
     highlight QuickFixLine guibg=#707070 guifg=#e8d8c5
-:else
-    " Light theme
-    colorscheme Tomorrow
-    set background=light
-    highlight Visual guifg=#575757 guibg=#d1d1d1 "this is the line highlighting colors
-    highlight QuickFixLine guibg=#707070 guifg=#e8d8c5 "this is from a popup below for linters and deuggers"
-    hi Search cterm=NONE guifg=#FFFFFF guibg=#c82829 "this is the / search highlight colors
+" :else
+    " " Light theme
+    " colorscheme Tomorrow
+    " set background=light
+    " highlight Visual guifg=#575757 guibg=#d1d1d1 "this is the line highlighting colors
+    " highlight QuickFixLine guibg=#707070 guifg=#e8d8c5 "this is from a popup below for linters and deuggers"
+    " hi Search cterm=NONE guifg=#FFFFFF guibg=#c82829 "this is the / search highlight colors
 
     " these sets status when file:
     " hi StatusLineNC guifg=#0000FF guibg=#FF00FF
@@ -222,7 +222,7 @@ set termguicolors
     " hi StatusLine guifg=#FF0000 guibg=#00FF00
 
     " :autocmd InsertEnter,InsertLeave * set cul! " this seems to introduce lag
-:endif
+" :endif
 
 " let $FZF_DEFAULT_COMMAND = 'ag --hidden -l -g ""'
 
