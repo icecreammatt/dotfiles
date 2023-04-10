@@ -1,0 +1,16 @@
+{
+  "ui" : {
+    "global" : {
+      "ui-type" : "virgilio"
+    }
+  },
+  "data-sink" : {
+    "global" : {
+      "disabled-plugins" : [
+        "SynapseDirectoryPlugin",
+        "SynapseLaunchpadPlugin",
+        "SynapseZeitgeistRelated"
+      ]
+    }
+  }
+}
