@@ -1,3 +1,7 @@
+# Archived
+
+These configs are way out of date. I am now using the [nixfiles](https://github.com/icecreammatt/nixfiles) repo as my current dotfiles config for all my machines.
+
 ## dotfiles
 
 > __NOTE:__ Be sure to update the `.gitconfig` so it uses the proper email address.
